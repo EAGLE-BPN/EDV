@@ -9,6 +9,7 @@
         <folder path="html/"/>
         <folder path="xml/"/>
         <folder path="xsl/"/>
+        <file name="bibliografia.xml"/>
         <file name="driver.xml"/>
         <file name="funzioni.xml"/>
         <file name="lingua.xml"/>

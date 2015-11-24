@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bibliografia</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p>No source: created in electronic format.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p/>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2015-11-25" who="Pietro Liuzzo">Creato file di esempio</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <head>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</head>
+
+
+            <div type="bibliography">
+                <head>Edizioni</head>
+                <listBibl>
+<!--si può fare in ZOTERO ed esportare in TEI per i riferimenti opppure puntare direttamente al record in zotero-->
+<bibl xml:id="savini1881"><author><name type="surname">Savini</name></author><date>1881</date></bibl>
+<bibl xml:id="savini1907"><author><name type="surname">Savini</name></author><date>1907</date></bibl>
+<!--esempio articolo
+                    <bibl xml:id="abdussalem-jmr1997"><author><name type="surname"
+                            >Abdussalem</name>, M.</author>, <author><name type="surname"
+                                >Abdussaid</name>, A.</author>, <author><name type="surname"
+                                >Reynolds</name>, J.</author>, <date>1997</date>, <title level="a"
+                            >Partridges, gazelles and Greek inscriptions: a report on visits to the
+                            Cave of the Birds in Wadi Zaza</title>, <title level="j">Libya Antiqua
+                            (LibAnt)</title>
+                        <biblScope unit="issue">n.s. 3</biblScope>, <biblScope unit="pp"
+                            >47-50</biblScope></bibl>-->
+
+<!--           esempio monografia
+
+         <bibl xml:id="applebaum1979"><author><name type="surname">Applebaum</name>,
+                            S.</author>, <date>1979</date>, <title level="m">Jews and Greeks in
+                            Ancient Cyrene</title>, <title level="s">Studies in Judaism in late
+                            antiquity</title>
+                        <biblScope unit="vol">28</biblScope>, <pubPlace>Leiden</pubPlace></bibl>
+-->
+          
+
+                </listBibl>
+            </div>
+
+        </body>
+    </text>
+</TEI>

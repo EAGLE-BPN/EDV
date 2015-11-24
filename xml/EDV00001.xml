@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Iscrizione di Branca D’Urso</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00001</idno>
+                <!--id corrispondente in driver-->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <msName type="invNo"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support><p>Iscrizione proveniente dalla facciata della <placeName>casa dei
+                                        Melatini</placeName>, potente famiglia teramana, oggi conservata all’interno di
+                                    una casa in <placeName>via Nicola Palma 32</placeName> (già via dell’Annunziata). Si
+                                    tratta probabilmente di un messaggio di minaccia attraverso l’immagine della zampa
+                                    d’orso che richiamerebbe anche il nome o il soprannome del personaggio emittente.</p>
+                                        <rs ref="#Funerario"/>
+                                    <objectType/><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/130"
+                                        >Terracotta</material>
+                                    <dimensions>
+                                        <height unit="cm">100</height>
+                                        <width unit="cm">70</width>
+                                    </dimensions>
+                                    <rs type="statPreserv">Leggibile</rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution"/> 
+<!--possono essere inseriti valori dal vocabolario Execution Technique di EAGLE-->
+                                    <rs type="metre">Si</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> Elegante gotica maiuscola in <foreign xml:lang="la">scriptio continua</foreign>. <height/></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace/>
+                            <origDate when="1372">1372</origDate>
+                        </origin>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32</provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Didascalia – messaggio didascalico morale</term>
+                    <!--qui si può aggiungere un @ref con link a vocabolari EAGLE-->
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="en">Inglese</language>
+                <language ident="it">Italiano</language>
+                <language ident="la" rend="alphabet">Latino</language>
+                <language ident="it-abru" rend="used">Area mediana - abruzzese</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
+                <!--add more as required-->
+            </langUsage>
+            <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2015-11-24" who="Pietro Liuzzo">encoded in XML</change>
+            <change when="2015-11-17" who="Lucia Cacchioli">Dati inseriti in scheda modello in .docx</change> <!--schedatore-->
+        </revisionDesc>
+    </teiHeader>
+   <facsimile><!-- Riproduzioni: SAVINI 1881, tav. III; SAVINI 1907, TAV. LXII; GAVINI 1927-1928, II, p. 136, fig. 695 A; SABATINI 1996c, tav. XIII, foto 6.-->
+       <graphic n="foto1" url="https://url.della.foto/nomedelfile.estension">
+           <desc> SAVINI 1881, tav. III
+               <ref type="license" target="http://licenza.della/foto"><!--testo della licenza se necessario--></ref>
+           </desc>
+       </graphic>
+</facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>
+                        <ptr target="savini1881"/><citedRange unit="page">130-133</citedRange>
+                        <ptr target="savini1907"/><citedRange unit="page">27</citedRange>
+</bibl>
+<!--Compilare bibliografia Master e fare riferimento a quella-->
+<!--Edizioni: SAVINI 1881, pp. 130-133; SAVINI 1907, p. 25; CASINI 1907, pp. 629-630, n. 34, ristampa 1984, pp. 43-44; GAVINI 1927-1928, II, p. 136-138, in part. p. 136; SGATTONI 1973, pp. 32-35; SABATINI 1996c, pp. 599-601.-->
+                </listBibl>
+            </div>
+            <div type="edition" xml:space="preserve" xml:lang="it-abru">
+<!--IOSOBRĀCAD[..]SOP∙NATURA∙DE∙OFFENDEREADChIMESDENGNASPOCURA-->
+<!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
+                <ab>
+                    <lb n="1"/><w>Io</w> <w>so’</w> <persName><name>Branca</name> <name><w>d’</w><supplied reason="lost">Ur</supplied>so</name></persName> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>natura</w> 
+                    <lb n="2"/><w>de</w> <w>offendere</w> <w>ad</w> <w>chi</w> <w>me</w> <w>sdengna</w> <w><expan><abbr>s</abbr><ex>e</ex></expan></w> <w><expan><abbr>p</abbr><ex>r</ex><abbr>ocura</abbr></expan></w>.
+                </ab>
+            </div>
+            <div type="apparatus">
+<listApp>
+    <app loc="1">
+        <rdg resp="#casini #gavini #savini">Bracchu rissoso</rdg>
+    </app>
+<app loc="2">
+    <rdg resp="#casini">e a offendere, senpr o cura</rdg>
+    <rdg resp="#gavini #savini">d’offendere</rdg>
+    <rdg resp="#gavini">te procura</rdg>
+</app>
+</listApp>
+                <!--    1 Bracchu rissoso CASINI GAVINI SAVINI
+    2 e a offendere, senpr o cura CASINI, d’offendere GAVINI SAVINI, te procura GAVINI-->
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
+                <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
+<div type="textpart" subtype="grafia">
+        <head>Grafia e fonologia:</head>
+                    <p>sdengna (v. 2): nasale palatale [ɲ] resa con trigramma &lt;ngn&gt;;</p>
+                        <p>de offendere, se procura (v. 2): mancata chiusura in protonia.</p>
+</div>                        
+                     <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
+                        <p>so’ (v. 1): apocope della I p. sing.del pres. ind.</p>
+                        <p>Si noti la contorsione sintattica dell’enunciato: nel primo segmento branca d’urso è riferito al soggetto di prima persona Io so’, in funzione di complemento predicativo; nel secondo segmento branca d’urso diventa soggetto del verbo in terza persona se procura pur continuando ad avere un oggetto pronominale in prima persona (me sdegna).</p>
+                    </div>    
+                        <div type="textpart" subtype="lessico"><head>Lessico</head>
+                        <p>Se procura (v. 2): forma pronominale attestata anticamente: va intesa nel senso di ‘si attiva, provvede’;</p>
+                        <p>Me sdegna (v. 2): sdegnare nel senso di ‘fare che altri si adiri’;</p>
+                        <p>De offendere (v. 2): offendere nel senso di ‘arrecare danno, ingiuria’. Comune nell’italiano antico la costruzione con l’oggetto indiretto (a chi);</p></div>
+                        </div>
+                        
+                        <div type="textpart" subtype="commentary"><head>COMMENTO</head>
+<p>                        Secondo Sabatini Branca d’Urso potrebbe essere nome o soprannome del personaggio emittente. In questo caso l’artista avrebbe sfruttato il piano iconico per rafforzare l’immagine minacciosa del personaggio: il cimiero ha, infatti, forma di zampa d’orso e il mazzafrusto termina con una grossa B, iniziale di Branca, in funzione di sfera contundente.</p>
+                        <p>La lastra, seppure in cattivo stato, mostra ancora tre ordini di immagini. In basso due angeli alati sorreggono uno scudo che contiene lo stemma della famiglia dei Melatini, circondato da un nastro che reca l’iscrizione. Infine, in alto, si affiancano quattro stemmi: quello della casa d’Angiò, quello dei Cavalcanti, forse quello del vescovo Pietro della Valle – non perfettamente riconoscibile perché scalpellato – e quello cardinalizio degli Orsini. Sulla cornice della lastra, sotto lo stemma, sono visibili tracce di lettere di un’iscrizione latina. Sabatini informa che, secondo letture fatte nell’Ottocento da storici locali, questa epigrafe riportava l’artefice della lastra e la data: Bartolomeus magistri Iocundi me fecit a. MCCCLXXII.</p>
+<!--vedi anche--><p>Vedi anche <ref target="EDV00002"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+</div>
+
+            </div>
+        </body>
+    </text>
+</TEI>
