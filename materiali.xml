@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+•	bronzo
+•	rame
+•	su malta fresca
+•	argento
+•	oro
+•	stoffa
+•	creta terracotta, ceramica
+•	ferro
+•	pietra
+•	legno
+•	marmo
+•	mosaico
+•	piombo
+•	intonaco
+•	vetro
+•	tela
+•	sconosciuto-->
+
+
+<list>
+	<item xml:id="AvvisoPubblico">
+		<term xml:lang="it">Avviso pubblico</term>
+	</item>
+	<item xml:id="Normativo">
+		<term xml:lang="it">Normativo</term>
+	</item>
+	<item xml:id="Funerario">
+		<term xml:lang="it">Funerario</term>
+	</item>
+</list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--5.1 Avviso pubblico
+5.1.1 Normativo
+5.1.2 Funerario 
+5.1.3 Commemorativo
+5.1.4 Dedica o dichiarazione di committenza 
+5.2 Didascalia. 			
+5.2.1 Firma
+5.2.2 Didascalia descrittiva o narrativa
+5.2.3 Messaggio didascalico-morale / ammonitorio
+5.3 Graffiti e scritture estemporanee
+5.4 Iscrizioni su oggetti di uso quotidiano-->
+
+<list>
+	<item xml:id="AvvisoPubblico">
+		<term xml:lang="it">Avviso pubblico</term>
+	</item>
+	<item xml:id="Normativo">
+		<term xml:lang="it">Normativo</term>
+	</item>
+	<item xml:id="Funerario">
+		<term xml:lang="it">Funerario</term>
+	</item>
+</list>

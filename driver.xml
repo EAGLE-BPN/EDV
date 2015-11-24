@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--list all inscriptions-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Lista delle iscrizioni in volgare</title>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</p>
+			</sourceDesc>
+		</fileDesc>
+		<revisionDesc>
+			<change when="2015-11-24" who="pietroliuzzo">Lista iniziale</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div xml:id="index">
+				<ab>
+					<title>EDV</title>
+					<list>
+						
+						<item xml:id="EDV00001"/>
+						
+						<item xml:id="EDV00002"/>
+						
+					</list>
+				</ab>
+			</div>
+		</body>
+	</text>
+</TEI>

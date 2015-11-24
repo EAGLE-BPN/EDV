@@ -4,5 +4,15 @@
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options/>
     </meta>
-    <projectTree name="EDV.xpr"/>
+    <projectTree name="EDV.xpr">
+        <folder path="EDV-p5-xslt/"/>
+        <folder path="html/"/>
+        <folder path="xml/"/>
+        <folder path="xsl/"/>
+        <file name="driver.xml"/>
+        <file name="funzioni.xml"/>
+        <file name="lingua.xml"/>
+        <file name="materiali.xml"/>
+        <file name="statoconservazione.xml"/>
+    </projectTree>
 </project>

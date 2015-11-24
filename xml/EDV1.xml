@@ -3,17 +3,17 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
-            <titleStmt><title></title></titleStmt>
+            <titleStmt><title>Iscrizione di Branca D’Urso</title></titleStmt>
             <publicationStmt>
-                <authority></authority>
-                <idno type="filename"><!-- filename --></idno>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00001</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier><msName type="invNo"></msName></msIdentifier>
                     <physDesc>
                         <objectDesc>
-                            <supportDesc><support></support></supportDesc>
+                            <supportDesc><support><rs ref="#Funerario"></rs></support></supportDesc>
                             <layoutDesc><layout></layout></layoutDesc>
                         </objectDesc>
                         <handDesc>
@@ -32,6 +32,7 @@
             </sourceDesc>
         </fileDesc>
     </teiHeader>
+
     <text>
         <body>
             <div type="bibliography">

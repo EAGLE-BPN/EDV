@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--7.1 Buono
+7.2 Leggibile
+7.3 Parzialmente leggibile
+7. 4 Frammentario
+-->
+
+<list>
+	<item xml:id="Buono">
+		<term xml:lang="it">Buono</term>
+	</item>
+	<item xml:id="Leggibile">
+		<term xml:lang="it">Leggibile</term>
+	</item>
+	<item xml:id="ParzialmenteLeggibile">
+		<term xml:lang="it">Parzialmente leggibile</term>
+	</item>
+	<item xml:id="Frammentario">
+		<term xml:lang="it">Frammentario</term>
+	</item>
+</list>
