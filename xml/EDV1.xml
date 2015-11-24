@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title></title></titleStmt>
+            <publicationStmt>
+                <authority></authority>
+                <idno type="filename"><!-- filename --></idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><msName type="invNo"></msName></msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc><support></support></supportDesc>
+                            <layoutDesc><layout></layout></layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote><height></height>; </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace></origPlace>
+                            <origDate notBefore="0001" notAfter="0002"></origDate>
+                        </origin>
+                        <provenance type="found" when="1890"></provenance>
+                        <provenance type="observed" when="2014"></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl></bibl>
+                </listBibl>
+            </div>
+            <div type="edition" xml:space="preserve">
+                <ab>
+                    <lb n="1"/>
+                </ab>
+            </div>
+            <div type="translation">
+                <p></p>
+            </div>
+            <div type="commentary">
+                <p></p>
+            </div>
+        </body>
+    </text>
+</TEI>
