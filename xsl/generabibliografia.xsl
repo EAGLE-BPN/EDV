@@ -7,8 +7,8 @@
 	<xsl:output method="html"/>
 
 	<xsl:variable name="inscription">
-		<xsl:for-each select="//tei:item/@corresp">
-			<xsl:sequence select="document(concat('../xml/',.,'.xml'))"/>
+		<xsl:for-each select="//tei:item/@xml:id">
+			<xsl:sequence select="document(concat('xml/',.,'.xml'))"/>
 			<!--            in this step with keep in mind the path to each inscription file so that calling the variable the xslt is going to look at each of the files-->
 		</xsl:for-each>
 	</xsl:variable>
@@ -17,7 +17,7 @@
 
 	<xsl:template match="/">
 
-		<!-- TO BE USED ON listall: creates directly an HTML list of bibliographical references from an UNSTRUCTURED BIBLIOGRAPHY-->
+		<!-- TO BE USED ON driver: creates directly an HTML list of bibliographical references from an UNSTRUCTURED BIBLIOGRAPHY-->
 
 
 

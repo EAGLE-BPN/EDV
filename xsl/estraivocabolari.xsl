@@ -5,7 +5,7 @@
     exclude-result-prefixes="xs tei" version="2.0">
     
     
-    <!-- TO BE USED ON lisall.xml creates directly an HTML index of terms with links to inscriptions which have that value-->
+    <!-- TO BE USED ON driver.xml creates directly an HTML index of terms with links to inscriptions which have that value-->
     
     
     <xsl:variable name="inscription">

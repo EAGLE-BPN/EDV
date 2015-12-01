@@ -4,7 +4,7 @@
 	xmlns:gcse="nothing"
 	exclude-result-prefixes="xs tei" version="2.0">
 	
-	<!-- TO BE USED ON listall.xml creates directly an HTML index of terms with drop down menus for each value which show each inscription related to the term.-->
+	<!-- TO BE USED ON driver.xml creates directly an HTML index of terms with drop down menus for each value which show each inscription related to the term.-->
 	
 	
 	<xsl:output method="html"/>

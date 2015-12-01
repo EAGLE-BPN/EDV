@@ -16,7 +16,7 @@
 
     <xsl:template match="/">
 
-        <!-- TO BE USED ON listall: creates directly an HTML list of bibliographical references from an UNSTRUCTURED BIBLIOGRAPHY-->
+        <!-- TO BE USED ON driver: creates directly an HTML list of bibliographical references from an UNSTRUCTURED BIBLIOGRAPHY-->
 
 
         <xsl:result-document indent="yes" href="/liste/listanomi.xml">

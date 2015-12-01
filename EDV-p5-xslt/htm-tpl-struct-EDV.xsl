@@ -290,7 +290,7 @@ meant to be run in a folder with other data locally referred
 </xsl:template>
 
    <xsl:template match="t:objectType" mode="edv">
-<xsl:if test="//t:objectType/text()"><b>Supporto: </b>
+<xsl:if test="//t:objectType/text()"><br/><b>Supporto: </b>
       <xsl:choose>
          <xsl:when test="//t:objectType/text()">
             <a target="_blank">
@@ -334,11 +334,11 @@ meant to be run in a folder with other data locally referred
       </xsl:choose>
    </xsl:template>
    
-   <xsl:template match="t:ref">
+   <xsl:template match="t:ref" priority="1">
 <a href="{concat(./@target,'.html')}">iscrizione n° <xsl:value-of select="substring-after(./@target, 'EDV')"/></a>
    </xsl:template>
 
-   <xsl:template match="//t:rdg">
+   <xsl:template match="//t:rdg" priority="1">
       <xsl:value-of select="."/><xsl:text> </xsl:text><xsl:for-each select="tokenize(./@resp, '#')"><xsl:value-of select="upper-case(.)"/></xsl:for-each><xsl:if test="not(position()=last())"><xsl:text>; </xsl:text>
       </xsl:if>
    </xsl:template>

@@ -19,13 +19,12 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support><p>Iscrizione proveniente dalla <objectType>facciata</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE--> della <placeName>casa dei
+                                <support><p>Iscrizione proveniente dalla facciata della <placeName>casa dei
                                         Melatini</placeName>, potente famiglia teramana, oggi conservata all’interno di
                                     una casa in <placeName>via Nicola Palma 32</placeName> (già via dell’Annunziata). Si
                                     tratta probabilmente di un messaggio di minaccia attraverso l’immagine della zampa
                                     d’orso che richiamerebbe anche il nome o il soprannome del personaggio emittente.</p>
-                                        <rs ref="#Funerario"/>
-                                    
+                                    <objectType>Facciata</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/130"
                                         >Terracotta</material>
                                     <dimensions>
@@ -52,7 +51,7 @@
                             <origPlace/>
                             <origDate when="1372">1372</origDate>
                         </origin>
-                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32, <placeName type="modernRegion">Abruzzo</placeName>, <placeName type="modernCountry">Italia</placeName></provenance>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32, <placeName type="modernRegion">Abruzzo</placeName></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
