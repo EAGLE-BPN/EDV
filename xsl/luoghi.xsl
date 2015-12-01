@@ -10,7 +10,7 @@
 	<xsl:output method="html"/>
 	
 	<xsl:variable name="inscription">
-		<xsl:for-each select="//tei:item/@corresp">
+		<xsl:for-each select="//tei:item/@xml:id">
 			<xsl:sequence select="document(concat('../xml/',.,'.xml'))"/>
 			<!--            in this step with keep in mind the path to each inscription file so that calling the variable the xslt is going to look at each of the files-->
 		</xsl:for-each>
@@ -64,10 +64,10 @@
 								
 									<div data-role="collapsible"><h3><a target="_blank" href="{tei:placeName[not(@type)]/@ref}"><xsl:value-of select="tei:placeName[not(@type)]"/></a></h3>
 										<ul data-role="listview"><xsl:for-each select="current-group()"><li><a target="_blank"
-													href="{concat('/text/',ancestor::tei:TEI//tei:idno[@type='localID'],'.html')}">
+													href="{concat('iscrizioni/',ancestor::tei:TEI//tei:idno[@type='filename'],'.html')}">
 													<xsl:text> (</xsl:text>
 													<xsl:value-of
-														select="ancestor::tei:TEI//tei:idno[@type='localID']"/>
+														select="ancestor::tei:TEI//tei:idno[@type='filename']"/>
 													<xsl:text>) </xsl:text>
 												</a></li></xsl:for-each></ul>
 											</div>
@@ -95,10 +95,10 @@
 										<xsl:for-each-group select="current-group()" group-by="tei:placeName[not(@type)]">
 											<div data-role="collapsible"><h4><xsl:value-of select="tei:placeName[not(@type)]"/></h4>
 												<ul data-role="listview"><xsl:for-each select="current-group()"><li><a target="_blank"
-													href="{concat('/text/',ancestor::tei:TEI//tei:idno[@type='localID'],'.html')}">
+													href="{concat('iscrizioni/',ancestor::tei:TEI//tei:idno[@type='filename'],'.html')}">
 													<xsl:text> (</xsl:text>
 													<xsl:value-of
-														select="ancestor::tei:TEI//tei:idno[@type='localID']"/>
+														select="ancestor::tei:TEI//tei:idno[@type='filename']"/>
 													<xsl:text>) </xsl:text>
 												</a></li></xsl:for-each></ul>
 											</div>
