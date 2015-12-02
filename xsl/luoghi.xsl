@@ -34,7 +34,7 @@
 			</head>
 			<body>
 				<div data-role="header" id="header">
-					<h1>Indice dei Lughi</h1>
+					<h1>Indice dei Luoghi</h1>
 				</div>
 				
 				<div id="nav">

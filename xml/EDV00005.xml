@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Didascalie delle Storie di S. Biagio</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00005</idno>
+                <!--id corrispondente in driver-->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <msName type="invNo"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support><p>Le didascalie in volgare sono poste a corredo degli affreschi raffiguranti la <title type="workofart">Vita di San Biagio</title> dipinte da <persName type="artist">Lorenzo Salimbeni</persName>. 
+                                    Si possono individuare i seguenti episodi: <ref type="ins" target="#ab1"/> si trova sotto il Miracolo del maiale resuscitato; <ref type="ins" target="#ab2"/> si trova sotto il Rifiuto di adorare gli idoli; 
+                                    <ref type="ins" target="#ab3"/> si trova sotto il Martirio delle sette donne devote a San Biagio; <ref type="ins" target="#ab4"/> si trova sotto Il Supplizio di San Biagio.</p>
+                                    <objectType>affresco</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <material
+                                        >intonaco</material>
+                                    <dimensions>
+                                        <height unit="cm">non disponibile</height>
+                                        <width unit="cm">non disponibile</width>
+                                   </dimensions>
+                                    <rs type="statPreserv">frammentario</rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution"/> 
+<!--possono essere inseriti valori dal vocabolario Execution Technique di EAGLE-->
+                                    <rs type="metre">No</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>gotica maiuscola</handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace><placeName ref="http://www.geonames.org/6540457/san-ginesio.html">San Ginesio</placeName> (MC), Oratorio di San Biagio annesso alla collegiata. <placeName type="modernRegion">Marche</placeName></origPlace>
+                            <origDate when="1406">1406</origDate>
+                        </origin>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6540457/san-ginesio.html">San Ginesio</placeName> (MC), Oratorio di San Biagio annesso alla collegiata. <placeName type="modernRegion">Marche</placeName><placeName type="modernCountry">Italia</placeName></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Didascalia descrittiva o narrativa</term>
+                    <!--qui si può aggiungere un @ref con link a vocabolari EAGLE-->
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="en">Inglese</language>
+                <language ident="it">Italiano</language>
+                <language ident="la" rend="alphabet">Latino</language>
+                <language ident="it-med-marc" rend="used">Area mediana - marchigiano</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
+                <!--add more as required-->
+            </langUsage>
+            <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2015-12-01" who="Francesco Lorusso">encoded in XML</change>
+            <change when="2015-11-17" who="Alessandra Tiburzi">Dati inseriti in scheda modello in .docx</change> <!--schedatore-->
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>
+                        <ptr target="marchini1966"/><citedRange unit="page">282-289</citedRange>
+                        <ptr target="rossi1976"/><citedRange unit="page">87-89, 215 (n. 6), <foreign xml:lang="la">passim</foreign></citedRange>
+</bibl>
+<!--Terminare bibliografia -->
+<!--Compilare bibliografia Master e fare riferimento a quella-->
+<!--Edizioni: -->
+                </listBibl>
+            </div>
+            <div type="edition" xml:space="preserve" xml:lang="it-med-marc">
+<!--La trascrizione diplomatica è disponibile solo per le iscrizioni [2] e [3]-->
+<!--[2] sotto il Rifiuto di adorare gli idoli
+[Cho]ṂO · FO · ṂE[. . .] ·  S˚ ·  BIAṢIU					1
+[. .]I? A[.]E […]E  PC[. .] [.]DORAVA [3] sotto il Martirio delle sette donne devote a San Biagio
+CHOMO · FO · TALLATA ḶẠ ṬẸṢ[. .]					1
+A · V[.]I · DNE · ELIFILI · IN ṢEBẠ[.]TENOCH
+[.]ANDO XO SALVATOR[.]
+-->
+<!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
+                <div type="textpart" subtype="part" n="1"><head>Miracolo del maiale resuscitato</head><ab>
+                    <lb n="1"/><w><supplied reason="lost">Cho</supplied><supplied reason="undefined" evidence="previouseditor"><orig><unclear>mo</unclear></orig></supplied></w> <w>fe</w> <persName type="attested">B<surplus>l</surplus>iasi</persName><gap reason="lost" extent="unknown" unit="character"></gap>
+                    <lb n="2"/><w><gap reason="lost" extent="unknown" unit="character"/>u</w> <w>por<supplied reason="lost" cert="low">cu</supplied><gap reason="lost" extent="unknown" unit="character"/></w> <w>seno<gap reason="lost" extent="unknown" unit="character"/></w>
+                </ab></div>
+                <div type="textpart" subtype="part" n="2"><head>Rifiuto di adorare gli idoli</head><ab>
+                    <lb n="1"/><w><supplied reason="lost">Cho</supplied>mo</w> <w>fo</w> <w><unclear>m</unclear>e<supplied reason="lost">natu</supplied></w> <persName type="attested"><w><expan><abbr>S</abbr><ex>anct</ex><abbr><hi rend="superscript">o</hi></abbr></expan></w> <name>Bia<unclear>s</unclear>iu</name></persName>
+                    <lb n="2"/><gap reason="lost" quantity="2" unit="character"/> <w>a<gap reason="lost" quantity="1" unit="character"/>e</w> <w><gap reason="lost" extent="unknown" unit="character"/>e</w> <w><expan><abbr>p</abbr><ex>er</ex><abbr>c<supplied reason="lost">he</supplied></abbr></expan></w> <w><supplied reason="lost">a</supplied>dorava</w> <expan><abbr><am><g>X</g></am></abbr><ex>Cristo</ex></expan> <expan><abbr>Y</abbr><ex>esù</ex></expan>
+                </ab></div>
+                <div type="textpart" subtype="part" n="3"><head>Martirio delle sette donne devote a San Biagio</head><ab>
+                    <lb n="1"/><w>Chomo</w> <w>fo</w> <w>tallata</w> <w><unclear>la</unclear></w> <w><unclear>tes</unclear><supplied reason="lost">ta</supplied></w>
+                    <lb n="2"/><w>a</w> <num>V<supplied reason="lost">I</supplied>I</num> <w><expan><abbr>do</abbr><ex>n</ex><abbr>ne</abbr></expan></w> <w>e</w> <w>li</w> <w>fili</w> in <supplied reason="lost">S</supplied>eb<unclear>a</unclear><supplied reason="lost">s</supplied>tenoch
+                    <lb n="3"/><w><expan><abbr>p</abbr><ex>re</ex></expan><supplied reason="lost">g</supplied><hi rend="ligature">an</hi>do</w> <expan><abbr><am><g>X</g></am></abbr><ex>Cristo</ex></expan> <w>S<hi rend="ligature">al</hi>vator<supplied reason="lost">e</supplied></w>
+                </ab></div>
+                <div type="textpart" subtype="part" n="4"><head>Supplizio di San Biagio</head><ab>
+                    <lb n="1"/><w><supplied reason="lost" cert="low">Chomo</supplied></w> <persName type="attested"><supplied reason="lost">Bi</supplied>asiu</persName> <w>fo</w> <w>petenatu</w> <w>e</w> <w>fo</w> <w>bregatu<certainty locus="name" match=".."/></w>
+                </ab></div>                
+            </div>
+            <div type="apparatus">
+<listApp>
+    <app loc="2 1">
+        <rdg resp="#rossi">fu</rdg>
+        <rdg resp="#minardi">menato</rdg>
+    </app>
+<app loc="3 1">
+    <rdg resp="#marchini #rossi">talliata</rdg>
+</app>
+    <app loc="3 2">
+    <rdg resp="#rossi">Sebasteno ch</rdg>
+    </app>
+        <app loc="3 3">
+    <rdg resp="#marchini #rossi">salvator</rdg>
+        </app>
+</listApp>
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
+                <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
+<div type="textpart" subtype="grafia">
+        <head>Grafia e fonologia:</head>
+    <p>Forma etimologica da QUŌMŎDŎ > chomo <ref type="ins" target="#ab1"/>.1, <ref type="ins" target="#ab2"/>.1, <ref type="ins" target="#ab3"/>.1 <ref type="ins" target="#ab4"/>.1 con la perdita dell’elemento labiale nella labiovelare e la resa dell’occlusiva [k] con il digramma &lt;ch&gt; mentre in Biasi [1].1 Biasiu [2].1, [4].1 il gruppo &lt;-si-&gt; potrebbe essere impiegato per la fricativa palatale sorda [ʃ].</p>
+    <p>La laterale palatale geminata [ʎʎ] è resa con la semplice &lt;li&gt; in fili [3].2 e &lt;ll&gt; in tallata [3].1</p>
+    <p>Conservazione della –u finale nei participi petenatu e bregatu [4].1. Nel primo caso petenatu &lt; lat PECTĬNATU(M) è possibile rintracciare oltre alla riduzione del nesso latino -CT- >-ct-, il normale esito vocalico -e- da Ĭ latino. In bregatu si è avuta una sonorizzazione dell’occlusiva bilabiale sorda iniziale.</p>
+    <!--Mancano le note 7-8-->
+</div>                        
+                     <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
+                         <p>Forma etimologica da QUŌMŎDŎ > chomo [1].1, [2].1, [3].1 [4].1 con la perdita dell’elemento labiale nella labiovelare e la resa dell’occlusiva [k] con il digramma &lt;ch&gt;, mentre in Biasi [1].1 Biasiu [2].1, [4].1 il gruppo &lt;-si-&gt; potrebbe essere impiegato per la fricativa palatale sorda [ʃ].</p>
+                         <p>La laterale palatale geminata [ʎʎ] è resa con la semplice &lt;li&gt; in fili [3].2 e &lt;ll&gt; in tallata [3].1.</p>
+                         <p>Conservazione della –u finale nei participi petenatu e bregatu [4].1. Nel primo caso petenatu &gt; lat PECTĬNATU(M) è possibile rintracciare oltre alla riduzione del nesso latino -CT- >-ct-, il normale esito vocalico -e- da Ĭ latino. In bregatu si è avuta una sonorizzazione dell’occlusiva bilabiale sorda iniziale.</p>
+                    </div>    
+                        <div type="textpart" subtype="lessico"><head>Lessico</head>
+                            <p>Il verbo petenatu, letteralmente “pettinato”, indica piuttosto il supplizio dei pettini cui fu sottoposto il santo.</p>
+                            <p>Sebastenoch [3.2] indica Sebaste, la città originaria di San Biagio.</p></div>
+                        </div>
+                        
+                        <div type="textpart" subtype="commentary"><head>COMMENTO</head>
+                            <p>Le didascalie si presentano oggi estremamente lacunose, se non quasi del tutto evanite rispetto a quando Giuseppe Marchini le vide e trascrisse per la prima volta. I singoli episodi delle Storie di San Biagio vengono introdotte dal chomo che marca l’inizio di ogni breve didascalia dipinta in gotica maiuscola. L’unica iscrizione in latino riguarda la data di esecuzione e il nome dell’autore ed è scritta in gotica maiuscola: HOC · OPU(s) ·  FECIT · LAURE(n)TI/U(s) · SALINBE(ni) DE · S(ancto) SEVERI/NO · AN(n)O · D(omi)NI Mo CCCCo · VI.</p>
+                            <p>La storia affrescata segue fedelmente il racconto fornito da Jacopo da Varazze nella sua Legenda aurea nel XIII narrata al paragrafo XXXVIII.</p>
+                            <p>Il ciclo si trova ancora conservato nel suo ambiente originale, l’ultimo ambiente dell’oratorio di San Biagio che doveva avere la funzione di altare e si sviluppa lungo le tre pareti e la volta di un vano d’altare. I momenti principali della vita di san Biagio sono narrati nei quattro spicchi della volta e nelle pareti laterali. Essi furono rinvenuti nel 1965 a seguito di una campagna di restauro promossa dalla Soprintendenza per i Beni Artistici e Storici delle Marche e diretta da Giuseppe Marchini. Nel corso del tempo il sito ha subito una scialbatura che, insieme all’umidità, ha danneggiato ampie parti dell’intonaco dipinto. Le perdite più consistenti di colore si sono verificate negli affreschi della crociera, dove più il primo episodio è interessato da una lacuna che interessa tutto il bordo inferiore che doveva verosimilmente, al pari degli altri esistenti, contenere un cartiglio iscritto. La narrazione delle vicende del vescovo di Sebaste principia nella vela posta sopra alla lunetta di fondo che raffigura l’incontro tra il santo, dedito ad una vita eremitica, e i soldati del governatore, impegnati in una battura di caccia. Si passa poi alla lunetta della parete destra dove, sulla sinistra viene inserito il rientro a Sebaste dei soldati impegnati nella spedizione, assente nel testo della Legenda, dietro di loro san Biagio è portato via da gendarmi che lo avevano visto benedire una donna implorante e resuscitare il suo maiale divorato da un lupo; sulla destra il santo compie un secondo prodigio salvando un bambino che rischiava di morire soffocato a causa di una lisca di pesce. La narrazione prosegue nello spicchio di sinistra della crociera, dove San Biagio rifiuta di adorare gli dei pagani e si professa cristiano davanti al governatore; nella vela di fianco la donna cui aveva salvato il maiale si reca in prigione per far visita a San Biagio insieme ad un gruppo di altre donne e bambini. Nella parete sinistra, a lato della monofora troviamo il santo torturato con pettini di ferro e, infine, vela di destra il racconto si conclude con la decapitazione delle sette donne, che avevano raccolto il sangue di san Biagio e rifiutato il culto degli idoli, e dei loro figli.</p>
+                            <!--Mancano le note 9-13-->
+<!--vedi anche--><p>Vedi anche <ref target="EDV00002"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+</div>
+
+            </div>
+        </body>
+    </text>
+</TEI>

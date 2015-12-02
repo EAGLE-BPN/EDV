@@ -30,7 +30,7 @@
                 <head>Edizioni</head>
                 <listBibl>
 <!--si può fare in ZOTERO ed esportare in TEI per i riferimenti opppure puntare direttamente al record in zotero-->
-<bibl xml:id="savini1881"><author><name type="surname">Savini</name></author><date>1881</date></bibl>
+<bibl xml:id="savini1881"><author><name>Edoardo</name><name type="surname">Savini</name></author><date>1881</date></bibl>
 <bibl xml:id="savini1907"><author><name type="surname">Savini</name></author><date>1907</date></bibl>
 <!--esempio articolo
                     <bibl xml:id="abdussalem-jmr1997"><author><name type="surname"

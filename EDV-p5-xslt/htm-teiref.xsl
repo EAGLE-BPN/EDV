@@ -6,6 +6,7 @@
   <xsl:include href="teiref.xsl"/>
   
   <xsl:template match="t:ref">
+     <xsl:param  name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
       <xsl:choose>
          <xsl:when test="@type = 'reprint-from'">
             <br/>
@@ -29,6 +30,11 @@
                <xsl:apply-templates/>
             </a>
          </xsl:when>
+         <xsl:when test="$edn-structure='edv'"><xsl:choose>
+         <xsl:when test="@type"><a href="{./@target}">[<xsl:value-of select="substring-after(./@target, 'ab')"/>]</a></xsl:when>
+         <xsl:otherwise><a href="{concat(./@target,'.html')}">iscrizione n° <xsl:value-of select="substring-after(./@target, 'EDV')"/></a></xsl:otherwise>
+      </xsl:choose></xsl:when>
+         
          <xsl:otherwise>
             <xsl:apply-templates/>
          </xsl:otherwise>

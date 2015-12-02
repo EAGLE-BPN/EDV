@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Didascalie delle Storie della vita di San Francesco</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00002</idno>
+                <!--id corrispondente in driver-->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <msName type="invNo"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+     <support><p> Quel che resta delle didascalie in volgare che accompagnavano le <title type="workofart">Storie della Vita 
+                       di San Francesco</title> affrescate sulle pareti della <placeName>Cappella di San Francesco</placeName>.
+                    </p>
+                        <objectType>Parete</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/130"
+                                        >Intonaco</material>
+                                    <dimensions>
+                                        <height unit="cm"/>
+                                        <width unit="cm"/>
+                                    </dimensions>
+                                    <rs type="statPreserv">Frammentario</rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution"/> 
+<!--possono essere inseriti valori dal vocabolario Execution Technique di EAGLE-->
+                                    <rs type="metre">No</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote> Maiuscola gotica. <height/></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace/>
+                            <origDate when="1378" cert="low">Seconda metà del XIV secolo - 1378?</origDate>
+                        </origin>
+                        <provenance type="found"><placeName>Castelvecchio Subequo</placeName>
+                            Aquila
+                            Chiesa di San Francesco <title type="workofart">Storie della vita di San Francesco </title>
+                            <placeName type="modernRegion">Abruzzo</placeName>  <placeName type="modernCountry">Italia</placeName></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Didascalia narrativa</term>
+                    <!--qui si può aggiungere un @ref con link a vocabolari EAGLE-->
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="en">Inglese</language>
+                <language ident="it">Italiano</language>
+                <language ident="la" rend="alphabet">Latino</language>
+                <language ident="it-med-abru" rend="used">Area mediana - abruzzese</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
+                <!--add more as required-->
+            </langUsage>
+            <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.). Data l’impossibilità di una ricognizione diretta,
+                la presente edizione critico-interpretativa si basa sulla trascrizione diplomatica di DE RUBEIS 1991, pp. 351-353. 
+                Il lavoro della De Rubeis è stato realizzato sulla base di quanto, già al tempo, la studiosa riuscì a leggere 
+                dell’originario programma affrescato. Larga parte delle didascalie era, infatti, andata perduta a causa di opere 
+                murarie quali aperture di monofore o archi d’ingresso. Numerosi interventi di scialbatura e ritocco avevano 
+                inoltre reso di difficile lettura anche le parti di testo conservate. </creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2015-12-01" who="Luna Caccholi">dati inseriti in XML</change>
+            <change when="2015-11-24" who="Pietro Liuzzo">encoded in XML</change>
+            <change when="2015-11-17" who="Luna Cacchioli">Dati inseriti in scheda modello in .docx</change> <!--schedatore-->
+        </revisionDesc>
+    </teiHeader>
+   <facsimile>
+       <graphic n="foto1" url="https://url.della.foto/nomedelfile.estension">
+           <desc> 
+               <ref type="license" target="http://licenza.della/foto"><!--testo della licenza se necessario--></ref>
+           </desc>
+       </graphic>
+</facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    
+                    <bibl><ptr target="derubeis1991"/><citedRange unit="page">351-353, 339-350</citedRange></bibl>                  
+               
+                </listBibl>
+                
+                <!-- [1]
+Q(ua)n(d)o lu papa [. . .] 
+
+
+ -->
+                
+            </div>
+            <div type="edition" xml:space="preserve" xml:lang="it-abru">
+
+                    <div type="textpart" subtype="didascalia" n="1"> <ab> 
+                
+                <lb n="1"/><w><expan><abbr>Q</abbr><ex>ua</ex></expan><expan><abbr>n</abbr><ex>d</ex></expan>o</w><w>lu</w>
+                    <w>papa</w><gap reason="lost" extent="unknown" unit="character"/>
+                </ab>  </div>
+                
+                <!-- 
+                [2] La Visione di Cristo:
+Q(ua)n(d)o  S(ancto)  Franciscu horava abparveli Chr(ist)u in croce
+
+-->
+                
+              <div type="textpart" subtype="didascalia" n="2">
+                     <head>La Visione di Cristo:</head>
+                      <ab> 
+                      <lb n="2"/><w><expan><abbr>Q</abbr><ex>ua</ex></expan><expan><abbr>n</abbr><ex>d</ex></expan>o</w><w><expan><abbr>S</abbr>
+                          <ex>ancto</ex></expan></w> <persName>Fra<supplied reason="omitted">n</supplied>ciscu</persName><w>horava</w><w>abparveli</w> 
+                          <persName><abbr>Chr</abbr><ex>ist</ex><abbr>u</abbr></persName><w>in</w><w>croce</w> 
+                      
+                      </ab> </div>
+                
+      <!-- [3]
+[. . .][An]geli li foru rapp(re)se(n)tati 
+
+ -->
+                
+                 <div type="textpart" subtype="didascalia" n="3"> <ab> 
+                     
+                     
+              <lb n="3"/><gap reason="lost" extent="unknown"/><w><supplied reason="lost">An</supplied>geli</w><w>li</w>
+                     <w>foru</w><w>rap<expan><abbr>p</abbr><ex>re</ex></expan>s<expan><abbr>e</abbr><ex>n</ex></expan>tati</w>  
+              
+                 
+                 </ab> </div>
+      
+      <!-- [4]
+[. . .] S(an)c(t)u [. . .] 
+
+ -->
+                
+                 <div type="textpart" subtype="didascalia" n="4"> <ab> 
+                 
+                 <lb n="4"/><gap reason="lost" extent="unknown"/><w><expan><abbr>S</abbr><ex>an</ex></expan>
+                     <expan><abbr>c</abbr><ex>(t)</ex></expan>u</w><gap reason="lost" extent="unknown"/>
+                     
+                 </ab> </div>
+                 
+          <!-- [5] Il Sogno di Innocenzio III:
+Q(ua)n(n)do lu papa avea visione [e ..] ecclesia doio [domino?] [.....] Fra(n)ciscu le reparava 
+
+-->
+          
+                 <div type="textpart" subtype="didascalia" n="5"> 
+                     <head>Il Sogno di Innocenzio III:</head>
+                     
+                     <ab>
+                 
+                  <w><expan><abbr>Q</abbr><ex>ua</ex></expan><expan><abbr>n</abbr><ex>d</ex></expan>o</w>
+                  <w>lu</w> <w>papa</w><w>avea</w><w>visione</w><supplied reason="lost">e</supplied>
+                         <gap reason="lost" quantity="3" unit="character"/><w>ecclesia</w><w>doio</w> 
+                    <supplied reason="lost" cert= "low">domino</supplied><gap reason="lost" quantity="3" unit="character"/>
+             <persName>Fr<expan><abbr>a</abbr><ex>n</ex></expan>ciscu</persName><w>le</w><w>reparava</w>  
+                         
+                 
+                 </ab> </div>
+                
+     <!-- [6]
+[…..] XXVIIII die d(ecim)o me(nsi)s decenbr(is) III ind(ictionis)
+
+ -->    
+               
+                 <div type="textpart" subtype="didascalia" n="6"> <ab> 
+                 
+                 <lb n="6"/>
+    <gap reason="lost" extent="unknown" unit="character"/> <num value="29">XXVIIII</num> <w>die</w> 
+                     <w><expan><abbr>d</abbr><ex>ecim</ex></expan>o</w>
+     <w>m<expan><abbr>e</abbr><ex>nsi</ex></expan>s</w> <w>decenb<expan><abbr>r</abbr><ex>is</ex></expan></w>
+                     <num value="3">III</num><w><expan><abbr>ind</abbr><ex>ictionis</ex></expan></w>
+        
+                 
+                 </ab> </div>
+    
+    <!-- [7] La Morte di san Francesco:
+Q(ua)n(d)o lu ministru de ter(r)a de lavore vedeo l’anima de S(ancto) F(ranciscu) gire a celu
+
+ -->
+                
+                 <div type="textpart" subtype="didascalia" n="7"> 
+                     <head>La Morte di san Francesco:</head>
+               
+                     <ab> 
+                 <w><expan><abbr>Q</abbr><ex>ua</ex></expan><expan><abbr>n</abbr><ex>d</ex></expan>o</w>
+                   <w>lu</w><w>ministru</w><w>de</w><w>ter(r)a</w><w>de</w><w>lavore</w><w>vedeo</w><w>l’</w><w>anima</w> 
+                         <w>de</w><w><expan><abbr>S</abbr><ex>ancto</ex></expan></w> 
+                         <persName><expan><abbr>F</abbr><ex>ranciscu</ex></expan></persName><w>gire</w><w>a</w> 
+                         <w>celu</w>
+                 
+                 </ab> </div>
+                
+    <!-- [8] Il Miracolo della Levitazione:
+[Quando sancto Franciscu] horava fo vedutu da li frati soi sospesu da la terra
+
+[ -->
+                 <div type="textpart" subtype="didascalia" n="8"> 
+                    <head>Il Miracolo della Levitazione:</head>
+                     
+                     <ab>
+                    <supplied reason="lost">Quando sancto Franciscu</supplied><w>horava</w><w>fo</w><w>vedutu</w><w>da</w> 
+                         <w>li</w><w>frati</w><w>soi</w><w>sospesu</w><w>da</w><w>la</w><w>terra</w>
+                     
+                     </ab>
+                 
+                  </div>
+                
+   <!-- 9] La Benedizione dei frati:
+[Quando sancto Franciscu] era malatu a morte benedise li [frati] soi  -->
+                
+                 <div type="textpart" subtype="didascalia" n="9"> 
+                     
+                     <head>La Benedizione dei frati:</head>
+                     <ab>
+                     
+                     <supplied reason="lost">Quando sancto Franciscu</supplied><w>era</w><w>malatu</w><w>a</w><w>morte</w>
+                         <w>benedise</w><w>li</w><supplied reason="lost">frati</supplied><w>soi</w>
+                     
+                     </ab> </div>
+              
+                
+                               
+            </div>
+            
+            <div type="apparatus">
+<listApp>
+    <app loc="1">
+        <rdg resp="#casini #gavini #savini"></rdg>
+    </app>
+<app loc="2">
+    <rdg resp="#casini"></rdg>
+    <rdg resp="#gavini #savini"></rdg>
+    <rdg resp="#gavini"></rdg>
+</app>
+</listApp>
+       
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            
+            <div type="commentary">
+                <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
+                    
+<div type="textpart" subtype="grafia">
+        <head>Grafia e fonologia:</head>
+    <p>Franciscu, Christu, Sanctu, celu (2, 5, 7, 8, 9): conservazione di  –u finale dei nomi maschili normale 
+        nell'aquilano <bibl><ptr target="giammarco1960a"/><citedRange unit="page">41</citedRange></bibl>;</p>
+    <p>abparveli (2): dissimilazione di geminate -pp- > bp
+        <bibl><ptr target="rohlfs1966-1969"/><citedRange unit="paragraph">329</citedRange></bibl>.</p>
+    <p>sospesu (8): conservazione di  –u finale, ma mancanza dell'attesa metafonesi.</p>
+</div>                        
+                     <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
+    <p>lu (1, 5, 7): articolo determinativo maschile in –u davanti a consonante 
+       (cfr. la forma neutra lo dell’articolo determinativo, scheda n. 7 Lapide delle male lingue);
+         <bibl><ptr target="giammarco1979"/><citedRange unit="page">124-125 e 138-139</citedRange></bibl>. 
+        La forma maschile [IL]LU&gt;lu è documentata già dal codice celestiniano dei Proverbia (seconda metà dei XIII secolo), 
+         si vedano, ad esempio: lu paliu, lu albergu (v. 27), lu molinu (v. 57), lu pede (v. 163), 
+          <bibl><ptr target="ugolini1959"/><citedRange unit="page">71-80</citedRange></bibl>.</p>
+         <p>foru ‘furono’: forma del passato remoto di 3a persona plurale non dittongata con uscita in –u 
+           <bibl><ptr target="rohlfs1966-1969"/><citedRange unit="paragraph">583</citedRange></bibl>;</p>
+             <p>vedeo (7) ‘vide’: perfetto analogico di 3a persona singolare con uscita in –o; Si confonti ad esempio 
+               la Lamentatio Beate Marie de Filio che riporta le seguenti forme di 3a pers. sing. del pass. rem. 
+               con uscita in -o: gio ‘andò’(vv. 15, 63, 67), benneo ‘vendette’ (v. 9), 
+                 <bibl><ptr target="ugolini1959"/><citedRange unit="page">31, 42-46</citedRange></bibl>.</p>
+       <p>fo (8): perfetto del verbo essere (ricorre anche in n.00 Paliotto; 
+         scheda n.00 Storie di Maria; scheda n. 00 Graffiti commemorativi); </p> 
+          <p>vedutu (8): normale uscita in –utu del participio passato rizoatono 
+       <bibl><ptr target="giammarco1979"/><citedRange unit="page">184</citedRange></bibl>;</p>
+         <p>soi (8, 9): forma non dittongata dell’aggettivo possessivo plurale di 3a persona. </p>           
+                    </div>    
+                        <div type="textpart" subtype="lessico"><head>Lessico</head>
+ <p>gire ‘andare’: forma comune, anche in Guittone («Non creda om che paura / aggia me fatto partire / ché siguro istar e gire»,
+     Rime, 3.87,  <bibl><ptr target="contini1960"/><citedRange unit="page">203</citedRange></bibl>), 
+     in Dante («ne la terza la licenzio del gire quando vuole» Vn, XII, 16-17; «e tempo è di non stare ferma ma di gire», Convivio, IV, 30) 
+ e nella Lamentatio beate Marie de filio in cui si incontrano le forme gio 15, 67, ne gìo 63 e gionne ‘andò’ 77 
+     <bibl><ptr target="ugolini1959"/><citedRange unit="page">42 sgg.</citedRange></bibl>.</p>
+                        
+                       </div>
+                        </div>
+                        
+     <div type="textpart" subtype="commentary"><head>COMMENTO</head>
+  <p> Lo stato di conservazione del ciclo di affreschi dedicato alla vita del Santo è pessimo a causa di numerosi 
+      interventi e alterazioni che hanno causato la perdita della maggior parte delle scene dipinte. La didascalia [6], 
+      che riportava la data dell’affresco, è andata quasi completamente perduta a causa dell’apertura di una monofora sul 
+      lato sinistro della navata. La De Rubeis ritiene comunque possibile far risalire l’esecuzione degli affreschi intorno 
+      al 1378, anno cui corrisponde anche l’indizione riportata dal testo
+      <bibl><ptr target="derubeis1991"/><citedRange unit="page">352</citedRange></bibl>.</p>
+ <p>Le storie della vita del Santo sono disposte su tre registri e nelle lunette. Ciascuna scena è racchiusa in una cornice
+     decorativa ed è accompagnata da una didascalia che ne descrive il soggetto. Mentre le didascalie che descrivono le scene
+     sono in minuscola gotica quelle dei cartigli sono in maiuscola. Il programma si legge in senso orario e dall’alto verso il
+     basso iniziando dalla lunetta della parete est. Tra le didascalie conservate è possibile identificare La Visione di Cristo [2], 
+     Il Sogno di Innocenzio III [5], La Morte di San Francesco [7], il Miracolo della Levitazione [8] e La Benedizione dei Frati [9]. 
+     In basso e lungo tutte le pareti corre uno zoccolo in finto marmo con tondi che alternano busti di santi allo stemma dei Conti
+     di Celano. </p>
+<!--vedi anche--><p>Vedi anche <ref target="EDV00003"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+</div>
+
+            </div>
+        </body>
+    </text>
+</TEI>

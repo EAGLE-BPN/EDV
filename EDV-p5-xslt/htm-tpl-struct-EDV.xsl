@@ -68,7 +68,7 @@ meant to be run in a folder with other data locally referred
             <div class="sourceDesc">
                <h3>Descrizione</h3>
 
-               <xsl:apply-templates select="//t:support" mode="edv"/>
+               <xsl:apply-templates select="//t:support"/>
                
                <xsl:if test="//t:keywords/t:term/text()"><br/>               
                <b>Funzione: </b>
@@ -334,8 +334,8 @@ meant to be run in a folder with other data locally referred
       </xsl:choose>
    </xsl:template>
    
-   <xsl:template match="t:ref" priority="1">
-<a href="{concat(./@target,'.html')}">iscrizione n° <xsl:value-of select="substring-after(./@target, 'EDV')"/></a>
+   <xsl:template match="t:ref" priority="1" mode="edv">
+      <xsl:choose><xsl:when test="@type"><a href="{./@target}">[<xsl:value-of select="substring-after(./@target, 'ab')"/>]</a></xsl:when><xsl:otherwise><a href="{concat(./@target,'.html')}">iscrizione n° <xsl:value-of select="substring-after(./@target, 'EDV')"/></a></xsl:otherwise></xsl:choose>
    </xsl:template>
 
    <xsl:template match="//t:rdg" priority="1">

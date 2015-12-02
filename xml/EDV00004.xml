@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Versi della <name type="workofart">Madonna del Voto</name></title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00004</idno>
+                <!--id corrispondente in driver-->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <msName type="invNo"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support><p>Le iscrizioni, un testo poetico a carattere laudistico, corrono sulla ghiera del padiglione e in due cartigli ai lati del trono della Vergine.</p>
+                                    <!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <p>[1] è sulla ghiera del padiglione; [2] nel cartiglio di destra sotto la tenda; [3]nel cartiglio di destra sotto la tenda.</p>
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/130"
+                                        >Intonaco</material>
+                                    <dimensions>
+                                        <height unit="cm">350</height>
+                                        <width unit="cm">240</width>
+                                    </dimensions>
+                                    <rs type="statPreserv">Parzialmente leggibile. Le lacune del testo e, più in generale, il cattivo stato di conservazione sono dovuti ad uno stacco otttocentesco quando il dipinto è stato tagliato in nove sezioni, alcune delle quali coincidenti con le porzioni testuali. Si noti in particolare che il cartiglio di sinistra è interessato da ben quattro fratture che hanno determinato la perdita di discrete porzioni di intonaco.</rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <rs type="execution"/> 
+<!--possono essere inseriti valori dal vocabolario Execution Technique di EAGLE-->
+                                    <rs type="metre">Si</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote></handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                    <origPlace/>
+                            <origDate notBefore="1440" notAfter="1460">1440-1460</origDate>
+                        </origin>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/">Visso</placeName> (Mc), Museo Diocesano <placeName type="modernRegion">Marche</placeName><placeName type="modernCountry">Italia</placeName></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Didascalia – messaggio didascalico-morale</term>
+                    <!--qui si può aggiungere un @ref con link a vocabolari EAGLE-->
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="en">Inglese</language>
+                <language ident="it">Italiano</language>
+                <language ident="la" rend="alphabet">Latino</language>
+                <language ident="it-med-marc" rend="used">Area mediana - marchigiano</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
+                <!--add more as required-->
+            </langUsage>
+            <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.). In mancanza di una riproduzione fotografica leggibile si fornisce l’edizione diplomatica del segmento testuale segnalato con il numero [2] e [3]. Per il resto del testo si fornisce esclusivamente una trascrizione critico-interpretativa sulla base dell’edizione di Capriotti 2010 presa a riferimento.</creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2015-12-01" who="Raffaella Marchesini">compilazione scheda</change>
+                   </revisionDesc>
+    </teiHeader>
+    <!-- la foto è disponibile in un catalogo artistico. Chiedere di diritti -->
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>
+                        <ptr target="venanzangeli1994"/><citedRange unit="page">56</citedRange>
+                        <ptr target="fabbi1967"/><citedRange unit="page">144-145</citedRange>
+                        <ptr target="fabbi1971"/><citedRange unit="page">318-319</citedRange>
+                        <ptr target="capriotti2010"/><citedRange unit="page">75-88</citedRange>
+</bibl>
+<!--Compilare bibliografia Master e fare riferimento a quella-->
+                </listBibl>
+            </div>
+            <div type="edition" xml:space="preserve" xml:lang="it-med-marc">
+<!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
+       <div type="textpart" subtype="part" n="1">
+           <ab>
+          <lb n="1"/><w>Da</w> <w>tutti</w>
+               <lb n="2"/><w>si'</w>
+               <lb n="3"/><w>pregato</w>
+               <lb n="4"/><w>Lux</w> <w><expan><abbr>mu</abbr><ex>n</ex>di</expan></w>  <w><expan><abbr>i</abbr><ex>n</ex></expan></w> <w>eterno</w>
+               <lb n="5"/><w>che</w> <w>el</w> <w>populo</w> <w>vissano</w>
+               <lb n="6"/><supplied reason="lost"><w>conservi</w> <w>in</w> <w>bono</w> <w>stato</w></supplied>
+       </ab></div>      
+                <div type="textpart" subtype="part" n="2">
+                    <ab>
+                       <lb n="1"/><w><expan><abbr>Inte</abbr><ex>r</ex><abbr>c<supplied reason="lost">edi</supplied></abbr></expan></w> <supplied reason="lost"><w>per</w> <w>nui</w></supplied>,
+                         <lb n="2"/><persName>Regina</persName> <w>san<supplied reason="lost">cta</supplied></w>
+                        <lb n="3"/><w>denan<supplied reason="lost">t</supplied>i</w> <w><supplied reason="lost">a</supplied>l</w> <w><supplied reason="lost">tu</supplied>o</w> <w>figliolu</w>
+                         <lb n="4"/><w>qua<supplied reason="lost">le</supplied></w> <w><supplied reason="lost">è</supplied></w> <w>irato</w> <w>ch<supplied reason="lost">e</supplied></w> <w>c<supplied reason="lost">e</supplied>s<supplied reason="lost">se</supplied></w> <w>via</w> <w>questa</w>
+                        <lb n="5"/><w>tempesta</w> <w>tanta</w> <w><supplied reason="lost">l</supplied>a</w> <w>quale</w> <w>avimo</w> <w>per</w>
+                        <lb n="6"/><w><supplied reason="lost">l</supplied>u</w> <w>nostru</w> <w>peccato</w>; <w><supplied reason="lost">et</supplied></w> <w>d<supplied reason="lost">e</supplied>lla</w> <w>tua</w> <w>sancta</w> 
+                         <lb n="7"/><w>gratia</w> <w><supplied reason="lost">c</supplied>e</w> <w>admanta</w>,
+                         <lb n="8"/><w>che</w> <w>qui<supplied reason="lost">st</supplied>o</w> <w>populu</w> <w>non</w> <w>si<supplied reason="lost">a</supplied></w> <w>sagectato</w>
+                     <lb n="9"/><w>da</w> <w>queste</w> <w>sagette</w> <w><supplied reason="lost">che</supplied></w>
+                         <lb n="10"/><w>passano</w> <supplied reason="lost"><w>el</w> <w>core</w></supplied>; <w>pregali</w>
+                         <lb n="11"/><w>che</w> <w>‘l</w> <w>faccia</w>
+                         <lb n="12"/><w><supplied reason="lost">per</supplied></w> <w>tuo</w> <w><supplied reason="lost">amor</supplied>e</w>.
+                    </ab></div>  
+                <div type="textpart" subtype="part" n="3"><ab>
+                    <lb n="1"/><gap reason="lost" extent="unknown" unit="character"/> <w>e</w> <gap reason="lost" extent="unknown" unit="character"/> <w>figliolo</w>
+                    <lb n="2"/><w><unclear>tuo</unclear></w> <w>che</w> <w>no</w> <w>simo</w> <w><expan><abbr>de</abbr><ex>gn</ex>i</expan></w>,
+                    <lb n="3"/><w>Matre</w>, <w>che</w> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>nui</w>
+                    <lb n="4"/><w>deggie</w> <w>pregare</w>,
+                    <lb n="5"/><w>perché</w> <w>d’</w><w>ogne</w> <w><expan><abbr>iniq</abbr><ex>ui</ex><lb 
+                        n="6" break="no"/>tà</expan></w> <supplied reason="undefined" evidence="previouseditor" cert="low">ooi</supplied> <w>noy</w> <w>simo</w> <w><expan><abbr>p</abbr><ex>re</ex>gni</expan></w> 
+                    <lb n="7"/><w>et</w> <w>no</w> <w>cessimo</w> <w>semp<lb 
+                        n="8" break="no"/>re</w> <w>de</w> <w>male</w> <w>fare</w>. <w>Ma</w> <w>la</w> <w>tua</w> <w><expan><abbr>cleme</abbr><ex>n</ex>tia</expan></w> <w><supplied reason="lost">s</supplied>e</w> <w>dig<supplied reason="lost">ni</supplied></w>
+                    <lb n="9"/><w><expan><abbr>pe</abbr><ex>r</ex></expan></w> <w>nui</w> <w>pecc<supplied reason="lost">aturi</supplied></w> <w>volere</w>
+                    <lb n="10"/><w>orare</w>, <w><supplied reason="lost">ad</supplied></w> <w><supplied reason="lost">tu</supplied>o</w> <w>figliolu</w>
+                    <lb n="11"/><w>re</w> <w>incoronato</w>, <w>che</w> <w>cesse</w> <w>la</w> <w>moria</w> <w>da</w> <w><expan><abbr>o</abbr><ex>n</ex>ne</expan></w> <w> lato</w>.
+                </ab></div>  
+            </div>
+            <div type="apparatus">
+<listApp>
+    <app loc="1 1-6">
+        <rdg resp="#fabbi1964">Maria ha pregato Jesu Xristo / Mandi il decreto / Chel populo vissano / Conservi en bono stato</rdg>
+        <rdg resp="#fabbi1971">Maria ha pregato Jesu Cristo / Mandi il decreto / Chel populo vissano / Conservi en bono stato</rdg>
+    </app>
+        <app loc="1 2">
+        <rdg resp="#veneziangeli1984">si</rdg>
+    </app>
+<app loc="1 5">
+    <rdg resp="#veneziangeli1984">il</rdg>
+</app>
+    <app loc="2 1">
+    <rdg resp="#veneziangeli1984">intercede</rdg>
+    </app>
+    <app loc="2 4">
+    <rdg resp="#veneziangeli1984">iratu</rdg>
+        <rdg resp="#veneziangeli1984 #fabbi1971">fine aggia</rdg>
+</app>
+    <app loc="2 4">
+        <rdg resp="#veneziangeli1984">iratu</rdg>
+    </app>
+</listApp>
+                <!--    1 Bracchu rissoso CASINI GAVINI SAVINI
+    2 e a offendere, senpr o cura CASINI, d’offendere GAVINI SAVINI, te procura GAVINI-->
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
+                <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
+<div type="textpart" subtype="grafia">
+        <head>Grafia e fonologia:</head>
+                    <p>sdengna (v. 2): nasale palatale [ɲ] resa con trigramma &lt;ngn&gt;;</p>
+                        <p>de offendere, se procura (v. 2): mancata chiusura in protonia.</p>
+</div>                        
+                     <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
+                        <p>so’ (v. 1): apocope della I p. sing.del pres. ind.</p>
+                        <p>Si noti la contorsione sintattica dell’enunciato: nel primo segmento branca d’urso è riferito al soggetto di prima persona Io so’, in funzione di complemento predicativo; nel secondo segmento branca d’urso diventa soggetto del verbo in terza persona se procura pur continuando ad avere un oggetto pronominale in prima persona (me sdegna).</p>
+                    </div>    
+                        <div type="textpart" subtype="lessico"><head>Lessico</head>
+                        <p>Se procura (v. 2): forma pronominale attestata anticamente: va intesa nel senso di ‘si attiva, provvede’;</p>
+                        <p>Me sdegna (v. 2): sdegnare nel senso di ‘fare che altri si adiri’;</p>
+                        <p>De offendere (v. 2): offendere nel senso di ‘arrecare danno, ingiuria’. Comune nell’italiano antico la costruzione con l’oggetto indiretto (a chi);</p></div>
+                        </div>
+                        
+                        <div type="textpart" subtype="commentary"><head>COMMENTO</head>
+<p>                        Secondo Sabatini Branca d’Urso potrebbe essere nome o soprannome del personaggio emittente. In questo caso l’artista avrebbe sfruttato il piano iconico per rafforzare l’immagine minacciosa del personaggio: il cimiero ha, infatti, forma di zampa d’orso e il mazzafrusto termina con una grossa B, iniziale di Branca, in funzione di sfera contundente.</p>
+                        <p>La lastra, seppure in cattivo stato, mostra ancora tre ordini di immagini. In basso due angeli alati sorreggono uno scudo che contiene lo stemma della famiglia dei Melatini, circondato da un nastro che reca l’iscrizione. Infine, in alto, si affiancano quattro stemmi: quello della casa d’Angiò, quello dei Cavalcanti, forse quello del vescovo Pietro della Valle – non perfettamente riconoscibile perché scalpellato – e quello cardinalizio degli Orsini. Sulla cornice della lastra, sotto lo stemma, sono visibili tracce di lettere di un’iscrizione latina. Sabatini informa che, secondo letture fatte nell’Ottocento da storici locali, questa epigrafe riportava l’artefice della lastra e la data: Bartolomeus magistri Iocundi me fecit a. MCCCLXXII.</p>
+<!--vedi anche--><p>Vedi anche <ref target="EDV00002"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+</div>
+
+            </div>
+        </body>
+    </text>
+</TEI>

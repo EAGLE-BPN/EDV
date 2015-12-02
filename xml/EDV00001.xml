@@ -24,7 +24,8 @@
                                     una casa in <placeName>via Nicola Palma 32</placeName> (già via dell’Annunziata). Si
                                     tratta probabilmente di un messaggio di minaccia attraverso l’immagine della zampa
                                     d’orso che richiamerebbe anche il nome o il soprannome del personaggio emittente.</p>
-                                    <objectType>Facciata</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                        <rs ref="#Funerario"/>
+                                    <objectType>facciata</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/130"
                                         >Terracotta</material>
                                     <dimensions>
@@ -51,7 +52,7 @@
                             <origPlace/>
                             <origDate when="1372">1372</origDate>
                         </origin>
-                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32, <placeName type="modernRegion">Abruzzo</placeName></provenance>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32, <placeName type="modernRegion">Abruzzo</placeName>, <placeName type="modernCountry">Italia</placeName></provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -101,11 +102,12 @@
 <!--IOSOBRĀCAD[..]SOP∙NATURA∙DE∙OFFENDEREADChIMESDENGNASPOCURA-->
 <!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
                 <ab>
-                    <lb n="1"/><w>Io</w> <w>so’</w> <persName><name>Branca</name> <name><w>d’</w><supplied reason="lost">Ur</supplied>so</name></persName> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>natura</w> 
+                    <lb n="1"/><w>Io</w> <g type="stop"/> <w>so’</w> <persName><name>Branca</name> <name><w>d’</w><supplied reason="lost">Ur</supplied>so</name></persName> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>natura</w> 
                     <lb n="2"/><w>de</w> <w>offendere</w> <w>ad</w> <w>chi</w> <w>me</w> <w>sdengna</w> <w><expan><abbr>s</abbr><ex>e</ex></expan></w> <w><expan><abbr>p</abbr><ex>r</ex><abbr>ocura</abbr></expan></w>.
                 </ab>
             </div>
             <div type="apparatus">
+                
 <listApp>
     <app loc="1">
         <rdg resp="#casini #gavini #savini">Bracchu rissoso</rdg>
