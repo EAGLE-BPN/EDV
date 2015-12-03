@@ -6,7 +6,7 @@
     <xsl:output method="xml"/>
 
     <xsl:variable name="inscription">
-        <xsl:for-each select="//tei:item/@corresp">
+        <xsl:for-each select="//tei:item/@xml:id">
             <xsl:sequence select="document(concat('../xml/',.,'.xml'))"/>
             <!--            in this step with keep in mind the path to each inscription file so that calling the variable the xslt is going to look at each of the files-->
         </xsl:for-each>

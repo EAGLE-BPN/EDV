@@ -26,7 +26,7 @@
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-				<title>Epigrafi Digitali</title>
+				<title>Vernacular Inscriptions</title>
 				<link rel="stylesheet" href="graficagenerale.css" type="text/css"/>
 				<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
 					<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -98,7 +98,7 @@
 													href="{concat('iscrizioni/',ancestor::tei:TEI//tei:idno[@type='filename'],'.html')}">
 													<xsl:text> (</xsl:text>
 													<xsl:value-of
-														select="ancestor::tei:TEI//tei:idno[@type='filename']"/>
+														select="ancestor::tei:TEI//tei:title"/>
 													<xsl:text>) </xsl:text>
 												</a></li></xsl:for-each></ul>
 											</div>

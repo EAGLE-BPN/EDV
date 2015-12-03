@@ -13,7 +13,7 @@
         </xsl:for-each>
     </xsl:variable> 
     
-    <xsl:key name="g" match="tei:g" use="text()"/>
+    <xsl:key name="g" match="tei:g" use="node()"/>
     <xsl:key name="date" match="tei:origDate">
         <xsl:choose>
             <xsl:when test="tei:origDate/@when"><xsl:value-of select="tei:origDate/@when"/></xsl:when>
@@ -42,18 +42,18 @@
         </dates>
         
 <gtypes>
-    <acrophonic><xsl:for-each select="$inscription//tei:TEI//tei:g[@type='acrophonic'][generate-id() = generate-id(key('g',.)[1])]">
+    <stop><xsl:for-each select="$inscription//tei:TEI//tei:g[@type='stop'][generate-id() = generate-id(key('g',.)[1])]">
                                 <xsl:sort order="ascending"  select="lower-case(.)"/>
             
         <xsl:value-of select="concat(., ' ', count(key('g', .)), '&#xA;')"/>
-    </xsl:for-each></acrophonic>
+    </xsl:for-each></stop>
     
-    <alphabetic><xsl:for-each select="$inscription//tei:TEI//tei:g[@type='alphabetic'][generate-id() = generate-id(key('g',.)[1])]">
+    <cross><xsl:for-each select="$inscription//tei:TEI//tei:g[@type='cross'][generate-id() = generate-id(key('g',.)[1])]">
         <xsl:sort order="ascending"  select="lower-case(.)"/>
         
         <xsl:value-of select="concat(., ' ', count(key('g', .)), '&#xA;')"/>
         
-    </xsl:for-each></alphabetic>
+    </xsl:for-each></cross>
     <cyrnum><xsl:for-each select="$inscription//tei:TEI//tei:g[@type='cyrnum'][generate-id() = generate-id(key('g',.)[1])]">
         <xsl:sort order="ascending"  select="lower-case(.)"/>
         
