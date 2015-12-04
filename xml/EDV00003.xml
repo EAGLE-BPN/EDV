@@ -19,13 +19,13 @@
                     <physDesc>
                         <objectDesc>
                             <supportDesc>
-                                <support><p><objectType>Monumento equestre</objectType> con iscrizione bilingue eseguito
+                                <support><p> Monumento equestre con iscrizione bilingue eseguito
                                     da <persName type="autore">Gualtiero d’Alemagna</persName> per <persName type="committente">Pietro Lalle</persName> e la famiglia dei <persName type="committente">Camponeschi</persName>, 
                                     storica famiglia aquilana, conservato presso la <placeName>basilica di San Giuseppe Artigiano</placeName>, 
                                     già conosciuta come <placeName>Chiesa di San Biagio</placeName>.
-                                    .</p>
+                                    </p>
                                         <rs ref="#Funerario"/>
-                                    <objectType/><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <objectType>Monumento equestre</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/130"
                                         >Marmo</material>
                                     <dimensions>
@@ -44,7 +44,7 @@
                             </layoutDesc>
                         </objectDesc>
                         <handDesc>
-                            <handNote> Epigrafe in <foreign xml:lang="la">caratteri gotici </foreign>></handNote>
+                            <handNote> Epigrafe in caratteri gotici</handNote>
                         </handDesc>
                     </physDesc>
                     <history>
@@ -69,13 +69,16 @@
                 <language ident="en">Inglese</language>
                 <language ident="it">Italiano</language>
                 <language ident="la" rend="alphabet">Latino</language>
+                <language ident="la" rend="used">Latino</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
                 <language ident="it-abru" rend="used">Area mediana - abruzzese</language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
                 <!--add more as required-->
             </langUsage>
             <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</creation>
         </profileDesc>
         <revisionDesc>
+            <change when="2015-12-03" who="Alessandra Tiburzi">inserimento lemmi e tagging name</change>
             <change when="2015-12-01" who="Alessandra Tiburzi">creazione scheda</change>
+            <change when="2015-11-29" who="Luna Cacchioli">schedatore</change>
             <!--schedatore-->
         </revisionDesc>
     </teiHeader>
@@ -92,8 +95,6 @@
                 <listBibl>
                     
                         <bibl><ptr target="moretti1971"/><citedRange unit="page">620-623</citedRange></bibl>
-                        <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl>
-                        <bibl><ptr target="ugolini1959"/><citedRange unit="page">175</citedRange></bibl>
                         <bibl><ptr target="ugolini1959"/><citedRange unit="page">33, 61</citedRange></bibl>    
                         <bibl><ptr target="Rohlfs1966-1969"/><citedRange unit="paragraph">64</citedRange></bibl>
 
@@ -112,18 +113,18 @@ sono [........ .....] loro membri
 <!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
                 <div type="textpart" subtype="text" n="1">
                     <ab>
-                    <lb n="1"/><w>Canponisce </w> <w>domus </w> <w>vivus</w> <w>mostratur</w> <w>in</w> <w>alto</w> 
+                    <lb n="1"/><name>Canponisce </name> <w>domus</w> <w>vivus</w> <w>mostratur</w> <w>in</w> <w>alto</w> 
                     <lb n="2"/><persName><name>Ludovicus</name></persName> <w>miles</w> <w>sopore</w> <w>iacentem</w> 
                     <lb n="3"/><persName><name>Baptiste</name></persName> <w>gentum</w> <persName> gallioffi</persName> <w><expan><abbr>clareq</abbr><ex>ue</ex></expan></w> <w>natum</w> 
                     <lb n="4"/><w>Intempestive</w> <w>rediit</w> <w><expan><abbr>se</abbr></expan><ex>d</ex></w> <w>vivet</w> <w>in</w> <w>evum</w>
-                    <lb n="5"/><w>et</w> <w>qui</w> <w>si </w> <supplied reason="lost"><w>legge</w> <w>se</w> <w>tu</w> <w>ben</w> <w>rimembri</w> <w>di</w> <w>conte</w></supplied> <persName>Lalle</persName><w>du</w> <w>fillio</w> <w>e</w> <w>da</w><supplied reason="lost">nipote</supplied>
-                    <lb n="6"/><w>sono</w> <supplied reason="lost">rechiuse tutte</supplied> <w>loro</w> <w>membri</w>
+                    <lb n="5"/><w>et</w> <w>qui</w> <w>si</w> <supplied reason="lost"><w lemma="leggere">legge</w> <w>se</w> <w>tu</w> <w>ben</w> <w lemma="ricordare">rimembri</w> <w>di</w> <w>conte</w></supplied> <persName>Lalle</persName><w>du</w> <w lemma="figlio">fillio</w> <w>e</w> <w>da</w><w lemma="nipote"><supplied reason="lost">nipote</supplied></w>
+                    <lb n="6"/><w lemma="essere">sono</w> <supplied reason="lost"><w lemma="richiudere">rechiuse</w> <w>tutte</w></supplied> <w>loro</w> <w lemma="membro">membri</w>
                     </ab>
                 </div>
               <div type="textpart" subtype="date" n="2">     
                      <ab>
-                         <lb n="7"/><expan><abbr>A</abbr><ex>nno</ex></expan> <g type="stop"/> <expan><abbr>D</abbr><ex>omini</ex></expan> <g type="stop"/> <date when="1332"><expan><abbr>M</abbr><ex>illesimo</ex></expan>
-                     <lb n="8"/><num value="300">CCC</num><g type="stop"/><num value="30">XXX</num>
+                         <lb n="7"/><expan><abbr>A</abbr><ex>nno</ex></expan> <g type="stop"/> <expan><abbr>D</abbr><ex>omini</ex></expan> <g type="stop"/> <date when="1432"><expan><abbr>M</abbr><ex>illesimo</ex></expan>
+                     <lb n="8"/><num value="400">CCCC</num><g type="stop"/><num value="30">XXX</num>
                       <lb n="9"/><num value="2">II</num><g type="stop"/></date>
                  </ab>
               </div> 
@@ -132,13 +133,13 @@ sono [........ .....] loro membri
             <div type="apparatus">
 <listApp>
     <app loc="1">
-        <rdg resp="#moretti"> Camponisce, mastratur </rdg>
+        <rdg resp="#moretti1971"> Camponisce, mastratur </rdg>
     </app>
 <app loc="2">
-    <rdg resp="#moretti">jacentem </rdg>
+    <rdg resp="#moretti1971">jacentem </rdg>
 </app>
  <app loc="4">
-     <rdg resp="#moretti">redit </rdg>
+     <rdg resp="#moretti1971">redit </rdg>
     
 </app>
 </listApp>
@@ -154,7 +155,10 @@ sono [........ .....] loro membri
                 <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
 <div type="textpart" subtype="grafia">
         <head>Grafia e fonologia:</head>
-                        <p>fillio (5): resa della laterale palatale [ʎ] con il trigramma &lt;lli&gt;. Per la resa nel dialetto abruzzese moderno del nesso  - L+J - &gt;ghj; jj; ggl; gg a seconda delle aree geografiche si veda Giammarco 1960a, p. 53.  <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl> Cfr. anche le forme filiu (Lamentatio, 35, ecc.; Proverbia, 18) e filiolu (Orationes, b 12, d 9) con la tipica terminazione mashile in –u, Ugolini 1959, p. 175  <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl></p>
+                        <p>fillio (5): resa della laterale palatale [ʎ] con il trigramma &lt;lli&gt;.
+                            Per la resa nel dialetto abruzzese moderno del nesso  - L+J - &gt;ghj; jj; ggl; gg 
+                            a seconda delle aree geografiche si veda Giammarco 1960a, p. 53.<bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl> Cfr. anche le forme filiu 
+                            (Lamentatio, 35, ecc.; Proverbia, 18) e filiolu (Orationes, b 12, d 9) con la tipica terminazione mashile in –u,  Ugolini 1959, p. 175.<bibl><ptr target="ugolini1959"/><citedRange unit="page">175</citedRange></bibl>  <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl></p>
     <p>rechiuse (6): Uso del grafema &lt;ch&gt; per l’occlusiva velare palatale. Mancata chiusura di [e] protonica a [i] nel prefisso iterativo re- normale nel volgare aquilano. Per l’instabilità del fenomeno già nei testi del Medioevo si veda Rohlfs 1966-1969, § 64. <bibl><ptr target="Rohlfs1966-1969"/><citedRange unit="paragraph">64</citedRange></bibl></p>
 </div>                        
                      <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
@@ -162,12 +166,13 @@ sono [........ .....] loro membri
                         </p>
                          <p>membri (6): maschile plurale in –i riferito al precedente rechiuse tutte nella forma femminile plurale</p>
                     </div>    
-                        
-                        
                         <div type="textpart" subtype="commentary"><head>COMMENTO</head>
-<p>                       La <placeName>basilica di San Giuseppe Artigiano</placeName>, ex <placeName>chiesa di San Biagio</placeName>, conserva al suo interno il <objectType>monumento equestre</objectType> dedicato a <persName type="committente">Pietro Lalle</persName>, membro della storica famiglia aquilana dei <persName type="committente">Camponeschi</persName>. Realizzato nel <origDate when="1432">1432</origDate> dal maestro <persName type="autore">Gualtiero di Alemagna </persName> in stile gotico tardo, il mausoleo è composto da un’arca sorretta da colonnine tortili che poggiano su leoni. L’arca è sovrastata da un’edicola cuspidata ad arco ogivale che racchiude la statua equestre di Ludovico Camponeschi e il giovane <persName type="committente"> Lalle</persName> giacente tra due angeli.  Nella lastra frontale sono rappresentati gli Apostoli e la scena dell’Incoronazione di Maria. In basso al centro, insieme allo stemma è conservata l’iscrizione funebre, le cui ultime due righe sono in volgare, che riporta anche la data <origDate when="1432">1432</origDate>.
+<p>                       La <placeName>basilica di San Giuseppe Artigiano</placeName>, ex <placeName>chiesa di San Biagio</placeName>, conserva al suo interno il monumento equestre dedicato a <persName type="committente">Pietro Lalle</persName>,
+                            membro della storica famiglia aquilana dei <persName type="committente">Camponeschi</persName>. Realizzato nel <origDate when="1432">1432</origDate> dal maestro <persName type="autore">Gualtiero di Alemagna </persName> 
+                            in stile gotico tardo, il mausoleo è composto da un’arca sorretta da colonnine tortili che poggiano su leoni. L’arca è sovrastata da un’edicola cuspidata ad arco ogivale che racchiude la statua equestre di Ludovico Camponeschi 
+                            e il giovane <persName type="committente"> Lalle</persName> giacente tra due angeli.  Nella lastra frontale sono rappresentati gli Apostoli e la scena dell’Incoronazione di Maria. In basso al centro, insieme allo stemma è conservata l’iscrizione funebre, le cui ultime due righe sono in volgare, che riporta anche la data <origDate when="1432">1432</origDate>.
 </p>
-<!--vedi anche--><p>Vedi anche <ref target="EDV00002"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+<!--vedi anche--><!--<p>Vedi anche <ref target="EDV00002"/> questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato</p>-->
 </div>
 
             </div>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Crocifissione e Storie di San Lorenzo</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</authority>
+                <idno type="filename">EDV00010</idno>
+                <!--id corrispondente in driver-->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <msName type="invNo"/>
+                    </msIdentifier>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <p> Resti di iscrizioni relative 
+                                        alla <ref type="ins" target="#ab1"/> Crocifissione 
+                                        di Cristo e ai Resti di iscrizioni relative alla 
+                                        <ref type="ins" target="#ab2"/> frammenti di didascalia
+                                        in volgare delle Storie di San Lorenzo eseguito
+                                        da <persName type="author">Lorenzo Salimbeni</persName> </p>
+                                       
+                                    <objectType>parete</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <material ref="http://www.eagle-network.eu/voc/material/lod/130"
+                                        >intonaco</material>
+                                    <dimensions>
+                                    </dimensions>
+                                    <rs type="statPreserv">Leggibile<ref type="ins" target="#ab1"/> </rs>
+                                    <rs type="statPreserv">Frammentario<ref type="ins" target="#ab2"/></rs>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    
+                                    <dimensions>
+                                        <!--attualmentet non disponibili-->
+                                    </dimensions>
+                                    <rs type="execution">a fresco</rs> 
+<!--possono essere inseriti valori dal vocabolario Execution Technique di EAGLE-->
+                                    <rs type="metre">No</rs>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>iscrizioni in gotica maiuscola </handNote> <!--chiedere alla professoressa-->
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin> 
+                            <origPlace/> <placeName ref="www.san severinomarche.it">San Severino Marche</placeName>, Chiesa di San Lorenzo in Doliolo
+                            <origDate when="1407">1407
+                            </origDate>
+                        </origin>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">San Severino Marche </placeName> <placeName type="modernRegion"> Marche  </placeName>,<placeName type="modernCountry">Italia</placeName></provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term>Didascalia – Didascalia descrittiva o narrativa</term>
+                    <!--qui si può aggiungere un @ref con link a vocabolari EAGLE-->
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="la" rend="alphabet">Latino</language>
+                <language ident="it-med-marc" rend="used">Area mediana - marchigiano </language> <!--See EpiDoc Guidelines for how to properly do this http://www.stoa.org/epidoc/gl/latest/supp-language.html -->
+                <!--add more as required-->
+            </langUsage>
+            <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</creation>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2015-12-02" who="Alessandra Tiburzi">creazione scheda</change>
+            <!--schedatore-->
+        </revisionDesc>
+    </teiHeader>
+    <facsimile><!-- Riproduzioni: Rossi 1976, figg. 117-120; Minardi 2008, tavv. XL (Crocifissione e santi); XLII (Crocifissione, part. di Sant’Eustachio e San Lorenzo) Ciardi Dupré dal Poggetto 1999, p. 131(Crocifissione e santi); Giannatiempo López 1999, p.133 (Storie di san Lorenzo, Storie di sant’Eustachio (?), angeli in volo).
+ -->
+       <graphic n="foto1" url="https://url.della.foto/nomedelfile.estension">
+           <desc> Rossi 1976, figg. 117-120; <!--continuare-->
+               <bibl><ptr target="rossi1976"/><citedRange unit="page">117-120</citedRange></bibl>
+               <ref type="license" target="http://licenza.della/foto"><!--testo della licenza se necessario--></ref>
+           </desc>
+       </graphic>
+</facsimile>
+    <text>
+        <body>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl><ptr target="serra1934"/><citedRange unit="page">259</citedRange></bibl>
+                    <bibl><ptr target="minardi2008"/><citedRange unit="page">168-173</citedRange></bibl>
+                    
+
+<!--Compilare bibliografia Master e fare riferimento a quella-->
+<!--Edizioni: SAVINI 1881, pp. 130-133; SAVINI 1907, p. 25; CASINI 1907, pp. 629-630, n. 34, ristampa 1984, pp. 43-44; GAVINI 1927-1928, II, p. 136-138, in part. p. 136; SGATTONI 1973, pp. 32-35; SABATINI 1996c, pp. 599-601.-->
+                </listBibl>
+            </div>
+            <div type="edition" xml:space="preserve" xml:lang="it-abru">
+<!--[1] alla base della Crocifissione:
+ANNO DOMINI M˚ • CC˚CC • V˚II • HOC 		1
+OPUS DIPINSIT • SA
+LINBENI D[.] [. .]NC[..] [. .. . . . . .]O			3
+
+[2] sotto alla Fustigazione di San Lorenzo e al Supplizio delle lame incandescenti:
+C[homo (?)] FO DATO BEU[…] CORPU			1
+ ˙
+	
+-->
+<!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
+                <div type="textpart" subtype="text" n="1">
+                    <ab>
+                        <lb n="1"/><w>Anno</w> <w>Domini</w> <num value="1407">>M<g type="stop"/> CCCC V<g type="stop"/>II</num> hoc 	
+                        <lb n="2"/><w>opus</w> <w>dipinsit</w> <persName type="author">Sa<lb break="no"
+                            n="3"/>linbeni</persName> d[e Sa]nc[to Severin]o
+                        <lb n="2"/>fi<supplied reason="lost">ci</supplied> <w>quisto</w>  l<w>aur<supplied reason="lost" cert="low">e</supplied>ro</w> <!--continuare da qua e inserire i puntini-->
+                    </ab>
+                </div>
+              <div type="textpart" subtype="text" n="2">     
+                     <ab>
+                         <lb n="7"/><expan><abbr>A</abbr><ex>nno</ex></expan> <g type="stop"/> <expan><abbr>D</abbr><ex>omini</ex></expan> <g type="stop"/> <date when="1332"><expan><abbr>M</abbr><ex>illesimo</ex></expan>
+                     <lb n="8"/><num value="300">CCC</num><g type="stop"/><num value="30">XXX</num>
+                      <lb n="9"/><num value="2">II</num><g type="stop"/></date>
+                 </ab>
+              </div> 
+                </div>
+           
+            <div type="apparatus">
+<listApp>
+    <app loc="1">
+        <rdg resp="#moretti"> Camponisce, mastratur </rdg>
+    </app>
+<app loc="2">
+    <rdg resp="#moretti">jacentem </rdg>
+</app>
+ <app loc="4">
+     <rdg resp="#moretti">redit </rdg>
+    
+</app>
+</listApp>
+                <!--   1 Camponisce, mastratur Moretti
+2  jacentem Moretti
+4 redit Moretti
+-->
+            </div>
+            <div type="translation">
+                <p/>
+            </div>
+            <div type="commentary">
+                <div type="textpart" subtype="linguistica"><head>ANALISI LINGUISTICA</head>
+<div type="textpart" subtype="grafia">
+        <head>Grafia e fonologia:</head>
+                        <p>fillio (5): resa della laterale palatale [ʎ] con il trigramma &lt;lli&gt;. Per la resa nel dialetto abruzzese moderno del nesso  - L+J - &gt;ghj; jj; ggl; gg a seconda delle aree geografiche si veda Giammarco 1960a, p. 53.  <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl> Cfr. anche le forme filiu (Lamentatio, 35, ecc.; Proverbia, 18) e filiolu (Orationes, b 12, d 9) con la tipica terminazione mashile in –u, Ugolini 1959, p. 175  <bibl><ptr target="giammarco1960a"/><citedRange unit="page">53</citedRange></bibl></p>
+    <p>rechiuse (6): Uso del grafema &lt;ch&gt; per l’occlusiva velare palatale. Mancata chiusura di [e] protonica a [i] nel prefisso iterativo re- normale nel volgare aquilano. Per l’instabilità del fenomeno già nei testi del Medioevo si veda Rohlfs 1966-1969, § 64. <bibl><ptr target="Rohlfs1966-1969"/><citedRange unit="paragraph">64</citedRange></bibl></p>
+</div>                        
+                     <div type="textpart" subtype="morfosintassi">   <head>Morfologia e sintassi</head> 
+                         <p>du, da (5): forme per &lt; de lu e &lt; de la, comuni per le preposizioni articolate dei testi abruzzesi. Si noti la contorsione sintattica dell’enunciato: nel primo segmento branca d’urso è riferito al soggetto di prima persona Io so’, in funzione di complemento predicativo; nel secondo segmento branca d’urso diventa soggetto del verbo in terza persona se procura pur continuando ad avere un oggetto pronominale in prima persona (me sdegna).<bibl><ptr target="ugolini1959"/><citedRange unit="page">33, 61</citedRange></bibl>
+                        </p>
+                         <p>membri (6): maschile plurale in –i riferito al precedente rechiuse tutte nella forma femminile plurale</p>
+                    </div>    
+                        
+                        
+                        <div type="textpart" subtype="commentary"><head>COMMENTO</head>
+<p>                       La <placeName>basilica di San Giuseppe Artigiano</placeName>, ex <placeName>chiesa di San Biagio</placeName>, conserva al suo interno il to a <persName type="committente">Pietro Lalle</persName>, membro della storica famiglia aquilana dei <persName type="committente">Camponeschi</persName>. Realizzato nel <origDate when="1432">1432</origDate> dal maestro <persName type="autore">Gualtiero di Alemagna </persName> in stile gotico tardo, il mausoleo è composto da un’arca sorretta da colonnine tortili che poggiano su leoni. L’arca è sovrastata da un’edicola cuspidata ad arco ogivale che racchiude la statua equestre di Ludovico Camponeschi e il giovane <persName type="committente"> Lalle</persName> giacente tra due angeli.  Nella lastra frontale sono rappresentati gli Apostoli e la scena dell’Incoronazione di Maria. In basso al centro, insieme allo stemma è conservata l’iscrizione funebre, le cui ultime due righe sono in volgare, che riporta anche la data <origDate when="1432">1432</origDate>.
+</p>
+<!--vedi anche--><p>Vedi anche <ref target="EDV00002"/> <!--questi riferimenti vengono poi resi da una trasformazione come desiderati eg, stampando il titolo o il riferimento dell'iscrizione nel corpus in un dato formato--></p>
+</div>
+
+            </div>
+            </div>
+        </body>
+    </text>
+</TEI>

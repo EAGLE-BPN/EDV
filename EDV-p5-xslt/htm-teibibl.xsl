@@ -30,9 +30,10 @@ bibliography. All examples only cater for book and article.
 
 -->
 
-	<xsl:template match="t:bibl">
+	<xsl:template match="t:bibl" priority="1">
 		<xsl:param name="parm-bib" tunnel="yes" required="no"/>
 		
+		<xsl:param  name="parm-edition-type" tunnel="yes" required="no"></xsl:param>
 		
 		<xsl:choose>
 			<!-- default general zotero behaviour prints author surname and name, title in italics, date and links to the zotero item page on the eagle group bibliography. assumes the inscription source has no free text in bibl, !!!!!!!only a <ptr @target='key'/> and a <citedRange>pp. 45-65</citedRange>!!!!!!!-->
@@ -119,6 +120,151 @@ this is to be used to get to the html in the zotero json including data and bib.
 				</xsl:choose>
 				<xsl:value-of select="citedRange"/>
 			</xsl:when>
+			<xsl:when test="$parm-bib = 'edv'">
+				
+				
+				<xsl:variable name="extendedbib">
+					<xsl:variable name="biblentry" select="./t:ptr/@target"/>
+					
+					<xsl:variable name="reference" select="document('../bibliografia.xml')//t:bibl/@xml:id"/>
+					<xsl:variable name="textref"
+						select="document('../bibliografia.xml')//t:bibl[@xml:id = $biblentry]"/>
+					<xsl:for-each select="$biblentry">
+						
+						<xsl:choose>
+							<xsl:when test="$reference = $biblentry">
+								<xsl:choose>
+									<xsl:when test="parent::t:ptr/parent::t:bibl/t:author">
+										<xsl:value-of select="parent::t:ptr/parent::t:bibl/t:author[1]"/>
+										<xsl:if test="parent::t:ptr/parent::t:bibl/t:author[2]">
+											<xsl:text>-</xsl:text>
+											<xsl:value-of select="parent::t:ptr/parent::t:bibl/t:author[2]"/>
+										</xsl:if>
+										<xsl:text>, </xsl:text>
+									</xsl:when>
+									<xsl:when test="parent::t:ptr/parent::t:bibl/t:editor">
+										<xsl:value-of select="parent::t:ptr/parent::t:bibl/t:editor[1]"/>
+										<xsl:if test="parent::t:ptr/parent::t:bibl/t:editor[2]">
+											<xsl:text>-</xsl:text>
+											<xsl:value-of select="parent::t:ptr/parent::t:bibl/t:editor[2]"/>
+										</xsl:if>
+									</xsl:when>
+								</xsl:choose>
+								<xsl:value-of select="upper-case($textref//t:author[1]/t:name[@type='surname'])"/><xsl:text> </xsl:text><xsl:value-of select="$textref//t:date[1]"/>
+								<xsl:text>, </xsl:text>
+<!--								needs template-->
+								<xsl:choose>
+									<xsl:when test="parent::t:ptr/parent::t:bibl/t:citedRange[@unit = 'page']">
+										<xsl:text>pp. </xsl:text>
+									</xsl:when>
+									<xsl:when test="parent::t:ptr/parent::t:bibl/t:citedRange[@unit = 'volume']">
+										<xsl:text>vol. </xsl:text>
+									</xsl:when>
+									<xsl:when test="parent::t:ptr/parent::t:bibl/t:citedRange[@unit = 'part']">
+										<xsl:text>n. </xsl:text>
+									</xsl:when>
+								</xsl:choose>
+								<xsl:value-of select="parent::t:ptr/parent::t:bibl/t:citedRange"/>
+								
+							</xsl:when>
+							<xsl:otherwise>
+								<!--if this appears the id do not really correspond to each other, ther might be a typo or a missing entry in the bibliography-->
+								<xsl:text> !</xsl:text>
+								<xsl:value-of select="$biblentry"/>
+								<xsl:text>!</xsl:text>
+							</xsl:otherwise>
+						</xsl:choose>
+						
+					</xsl:for-each>
+					
+				</xsl:variable>
+				<li><xsl:value-of select="$extendedbib"/></li>
+				
+			</xsl:when>
+			<xsl:when test="$parm-bib = 'edvzot'"> <!--different Zotero Key-->
+				<xsl:choose>
+					<xsl:when test=".[t:ptr]">
+						<xsl:variable name="biblentry" select="substring-after(./t:ptr/@target, '#')"/>
+						<xsl:variable name="zoteroapitei">
+							<!--							THIS IS BASED ON THE EAGLE KEY for the group library-->
+							<xsl:value-of
+								select="concat('https://api.zotero.org/users/2138134/items?tag=', $biblentry, '&amp;format=tei')"/>
+							<!-- to go to the json with the escaped html included  use &amp;format=json&amp;include=bib,data and the code below: the result is anyway escaped... -->
+							
+						</xsl:variable>
+						<xsl:variable name="zoteroapijson">
+							<xsl:value-of
+								select="concat('https://api.zotero.org/users/2138134/items?tag=', $biblentry, '&amp;format=json')"
+							/>
+						</xsl:variable>
+						<xsl:variable name="zoteroitemurl">
+							<xsl:variable name="unparsedtext" select="unparsed-text($zoteroapijson)"/>
+							<xsl:analyze-string select="$unparsedtext"
+								regex="(\[\s+\{{\s+&quot;key&quot;:\s&quot;)(.+)&quot;">
+								<xsl:matching-substring>
+									<xsl:value-of select="regex-group(2)"/>
+								</xsl:matching-substring>
+							</xsl:analyze-string>
+							
+						</xsl:variable>
+						<xsl:choose>
+							<xsl:when test="document($zoteroapitei)//t:biblStruct[@type = 'book']">
+								<a href="{concat('https://www.zotero.org/eaglebpn/items/',$zoteroitemurl)}">
+									<xsl:value-of select="document($zoteroapitei)//t:author/t:surname"/>
+									<xsl:text>, </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:author/t:forename"/>
+									<i>
+										<xsl:value-of select="document($zoteroapitei)//t:title[@level = 'm']"/>
+									</i>
+									<xsl:text>, </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:date"/>
+								</a>
+							</xsl:when>
+							
+							<xsl:when test="document($zoteroapitei)//t:biblStruct[@type = 'journalArticle']">
+								<a href="{concat('https://www.zotero.org/eaglebpn/items/',$zoteroitemurl)}">
+									<xsl:value-of select="document($zoteroapitei)//t:author/t:surname"/>
+									<xsl:text>, </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:author/t:forename"/>
+									<i>
+										<xsl:value-of select="document($zoteroapitei)//t:title[@level = 'a']"/>
+									</i>
+									<xsl:text>, in</xsl:text>
+									<xsl:text>"</xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:title[@level = 'j']"/>
+									<xsl:text>" </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:biblScope[@type = 'issue']"/>
+									<xsl:text> (</xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:date"/>
+									<xsl:text>) </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:biblScope[@type = 'pp']"/>. </a>
+								<xsl:if test="document($zoteroapitei)//t:note[@type = 'url']">
+									<xsl:text>EDH bibliography url: </xsl:text>
+									<xsl:value-of select="document($zoteroapitei)//t:note[@type = 'url']"/>
+								</xsl:if>
+								
+							</xsl:when>
+						</xsl:choose>
+						<!--				
+this is to be used to get to the html in the zotero json including data and bib. this is of no much use as the html is returned escaped and thus is not really usable as such
+
+<xsl:variable name="unparsedtext" select="unparsed-text($zoteroapi)"/>
+				<xsl:analyze-string select="$unparsedtext" regex="(bib&quot;:\s&quot;)(.+)&quot;"> <!-\-(bib&quot;: &quot;)(.+)(&quot;, &quot;data)-\->
+<xsl:matching-substring>
+	<xsl:variable name="a" select="replace(regex-group(2), '\\n', '')"/>
+<xsl:variable name="b" select="replace($a,'\\','')"/>
+	<xsl:value-of select="$b" disable-output-escaping="yes"/>
+</xsl:matching-substring>
+				</xsl:analyze-string>
+-->
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="."/>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:value-of select="citedRange"/>
+			</xsl:when>
+			
 			<!-- this render for irt taking into account that the desidered reference is already in the file and that only in some cases it needs to be edited. also the content of the zotero records is specific. irt uses biblScope as citedRange.-->
 			<xsl:when test="$parm-bib = 'irt'">
 				<xsl:choose>
@@ -337,13 +483,15 @@ this is to be used to get to the html in the zotero json including data and bib.
 
 			<!--assumes a bibliography.xml file in the same folder as the stylesheet. path should be changed according to local directory-->
 			<xsl:when test="$parm-bib = 'localTEI'">
+				
 				<xsl:variable name="extendedbib">
 					<xsl:variable name="biblentry" select="./t:ptr/@target"/>
 					
 					<xsl:variable name="reference" select="document('bibliography.xml')//t:bibl/@xml:id"/>
 					<xsl:variable name="textref"
-						select="document('bibliography.xml')//t:bibl[@xml:id = $biblentry]"/>
+						select="document('bibliografia.xml')//t:bibl[@xml:id = $biblentry]"/>
 					<xsl:for-each select="$biblentry">
+						
 						<xsl:choose>
 							<xsl:when test="$reference = $biblentry">
 								<xsl:choose>

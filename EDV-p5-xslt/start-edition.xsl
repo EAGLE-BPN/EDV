@@ -172,6 +172,7 @@
           </xsl:when>
           <xsl:when test="$edn-structure='test'">
               <xsl:call-template name="TEST-structure">
+                  <xsl:with-param name="parm-bib" select="$bibliography" tunnel="yes"/>
                   <xsl:with-param name="parm-internal-app-style" select="$internal-app-style" tunnel="yes"/>
                   <xsl:with-param name="parm-external-app-style" select="$external-app-style" tunnel="yes"/>
                   <xsl:with-param name="parm-edn-structure" select="$edn-structure" tunnel="yes"/>
@@ -185,6 +186,7 @@
           
           <xsl:when test="$edn-structure='edv'">
               <xsl:call-template name="EDV-structure">
+                  <xsl:with-param name="parm-bib" select="$bibliography" tunnel="yes"/>
                   <xsl:with-param name="parm-internal-app-style" select="$internal-app-style" tunnel="yes"/>
                   <xsl:with-param name="parm-external-app-style" select="$external-app-style" tunnel="yes"/>
                   <xsl:with-param name="parm-edn-structure" select="$edn-structure" tunnel="yes"/>

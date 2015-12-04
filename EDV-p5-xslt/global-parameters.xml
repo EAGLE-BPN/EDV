@@ -77,6 +77,7 @@
     <name>bibliography</name>
     <value on="yes">default</value>
     <value>irt</value>
+    <value>edv</value>
     <value>igcyr</value>
     <value>localTEI</value>
     <value>zotero</value> <!--looks at the api and renders the html from there-->

@@ -57,13 +57,15 @@
          </xsl:for-each>
       </xsl:variable>
       <xsl:if test="@n"><!-- prints div number -->
+          <br/>
          <span class="textpartnumber" id="{$div-type}ab{$div-loc}{@n}">
            <!-- add ancestor textparts -->
              <xsl:if test="($parm-leiden-style = 'ddbdp' or $parm-leiden-style = 'sammelbuch') and @subtype">
               <xsl:value-of select="@subtype"/>
               <xsl:text> </xsl:text>
            </xsl:if>
-              <xsl:value-of select="@n"/>
+             <xsl:value-of select="@subtype"/><xsl:text>-</xsl:text><xsl:value-of select="@n"/>
+             <br/>
          </span>
       </xsl:if>
       <xsl:apply-templates/>

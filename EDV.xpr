@@ -10,22 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xml/EDV00005.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>edv</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>xml/EDV00001.xml</String>
+                                    <String>xml/EDV00004.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -55,7 +40,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xml/EDV00002.xml</String>
+                                    <String>xml/EDV00007.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -70,7 +55,7 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xml/EDV00004.xml</String>
+                                    <String>../../../../Volumes/NO%20NAME/EDV/xml/EDV00008.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -85,28 +70,71 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>driver.xml</String>
+                                    <String>EDV-p5-xslt/htm-tpl-struct-EDV.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>luoghi</String>
-                                        <String>vocabolari</String>
+                                        <String>edv</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
                                         <String>XSL</String>
                                     </list>
                                 </field>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xsl/luoghi.xsl</String>
+                                    <String>xml/EDV00007%20.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>luoghi</String>
+                                        <String>edv</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xml/EDV00010.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>edv</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>html/iscrizioni/EDV00006.html</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>edv</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xml/EDV00006.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>edv</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -120,92 +148,6 @@
                     <entry>
                         <String>scenarios</String>
                         <scenario-array>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>Lista di luoghi</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/xsl/luoghi.xsl</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${currentFileURL}</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XSL</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>${pd}/html/inscriptionsbyplace.html</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${pd}/html/inscriptionsbyplace.html</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-EE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
                                     <null/>
@@ -296,12 +238,120 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>zotero</String>
+                                                <String>edv</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>edn-structure</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>edv</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>edv solo diplomatica</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/EDV-p5-xslt/start-edition.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <File>${pd}/html/iscrizioni/${cfn}.html</File>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${pd}/html/iscrizioni/${cfn}.html</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
                                         <transformationParameter>
                                             <field name="paramDescription">
                                                 <paramDescriptor>
@@ -344,27 +394,6 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>external-app-style</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>defaultmax</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
                                     </list>
                                 </field>
                                 <field name="cascadingStylesheets">
@@ -382,7 +411,93 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>luoghi</String>
+                                    <String>gtype</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xsl/g%20type.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <null/>
+                                </field>
+                                <field name="outputResource">
+                                    <null/>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>indicediluoghi</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -418,7 +533,7 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputFile">
                                     <File>${pd}/html/inscriptionsbyplace.html</File>
@@ -439,7 +554,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInSVGPane">
                                     <Boolean>false</Boolean>
@@ -468,7 +583,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>vocabolari</String>
+                                    <String>lista termini</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -486,7 +601,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xsl/estraivocabolari.xsl</String>
+                                    <String>${pdu}/xsl/listeditermini.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -504,13 +619,13 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>${pd}/html/browsebytype.html</File>
+                                    <File>${pd}/html/indiceparole${cfn}.html</File>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/html/browsebytype.html</String>
+                                    <String>${pd}/html/indiceparole${cfn}.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -519,7 +634,7 @@
                                     <null/>
                                 </field>
                                 <field name="openInEditor">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInHTMLPane">
                                     <Boolean>false</Boolean>

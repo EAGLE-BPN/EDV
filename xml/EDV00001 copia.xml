@@ -25,7 +25,7 @@
                                     tratta probabilmente di un messaggio di minaccia attraverso l’immagine della zampa
                                     d’orso che richiamerebbe anche il nome o il soprannome del personaggio emittente.</p>
                                         <rs ref="#Funerario"/>
-                                    <objectType>facciata</objectType><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
+                                    <objectType/><!--possono essere inseriti valori dal vocabolario Object Type di EAGLE-->
                                     <material ref="http://www.eagle-network.eu/voc/material/lod/130"
                                         >Terracotta</material>
                                     <dimensions>
@@ -49,12 +49,10 @@
                     </physDesc>
                     <history>
                         <origin>
-                            <origPlace><placeName
-                                ref="http.//ilsitodiroma.it">
-                            Roma</placeName></origPlace>
+                            <origPlace/>
                             <origDate when="1372">1372</origDate>
                         </origin>
-                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32, <placeName type="modernRegion">Abruzzo</placeName>, <placeName type="modernCountry">Italia</placeName></provenance>
+                        <provenance type="found"><placeName ref="http://www.geonames.org/6541856/teramo.html">Teramo</placeName>, Via Nicola Palma 32</provenance>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -77,9 +75,8 @@
             <creation>Italian Medieval Epigraphy in the Vernacular. (IX-XVth c.)</creation>
         </profileDesc>
         <revisionDesc>
-            <change when="2015-12-01" who="Alessandra Tiburzi">ho aggiunto origplace con un ref</change>
             <change when="2015-11-24" who="Pietro Liuzzo">encoded in XML</change>
-            <change when="2015-11-17" who="Luna Cacchioli">Dati inseriti in scheda modello in .docx</change> <!--schedatore-->
+            <change when="2015-11-17" who="Lucia Cacchioli">Dati inseriti in scheda modello in .docx</change> <!--schedatore-->
         </revisionDesc>
     </teiHeader>
    <facsimile><!-- Riproduzioni: SAVINI 1881, tav. III; SAVINI 1907, TAV. LXII; GAVINI 1927-1928, II, p. 136, fig. 695 A; SABATINI 1996c, tav. XIII, foto 6.-->
@@ -105,12 +102,11 @@
 <!--IOSOBRĀCAD[..]SOP∙NATURA∙DE∙OFFENDEREADChIMESDENGNASPOCURA-->
 <!--la trascrizione diplomatica, a seconda delle necessità del settore può essere prodotta dal medesimo testo o codificata diveramente. è consigliabile avere un'unica versione del testo codificato, quindi inserire i punti, le diverse segnature o i caratteri unicode corrispondenti ai segni sulla pietra dove non alfabetici-->
                 <ab>
-                    <lb n="1"/><w>Io</w> <g type="stop"/> <w>so’</w> <persName><name>Branca</name> <name><w>d’</w><supplied reason="lost">Ur</supplied>so</name></persName> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>natura</w> 
+                    <lb n="1"/><w>Io</w> <w>so’</w> <persName><name>Branca</name> <name><w>d’</w><supplied reason="lost">Ur</supplied>so</name></persName> <w><expan><abbr>p</abbr><ex>er</ex></expan></w> <w>natura</w> 
                     <lb n="2"/><w>de</w> <w>offendere</w> <w>ad</w> <w>chi</w> <w>me</w> <w>sdengna</w> <w><expan><abbr>s</abbr><ex>e</ex></expan></w> <w><expan><abbr>p</abbr><ex>r</ex><abbr>ocura</abbr></expan></w>.
                 </ab>
             </div>
             <div type="apparatus">
-                
 <listApp>
     <app loc="1">
         <rdg resp="#casini #gavini #savini">Bracchu rissoso</rdg>

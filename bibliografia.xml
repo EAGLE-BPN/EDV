@@ -30,8 +30,7 @@
                 <head>Edizioni</head>
                 <listBibl>
 <!--si può fare in ZOTERO ed esportare in TEI per i riferimenti opppure puntare direttamente al record in zotero-->
-<bibl xml:id="savini1881"><author><name>Edoardo</name><name type="surname">Savini</name></author><date>1881</date></bibl>
-<bibl xml:id="savini1907"><author><name type="surname">Savini</name></author><date>1907</date></bibl>
+                    
 <!--esempio articolo
                     <bibl xml:id="abdussalem-jmr1997"><author><name type="surname"
                             >Abdussalem</name>, M.</author>, <author><name type="surname"
@@ -42,7 +41,11 @@
                             (LibAnt)</title>
                         <biblScope unit="issue">n.s. 3</biblScope>, <biblScope unit="pp"
                             >47-50</biblScope></bibl>-->
-
+                    <bibl xml:id="colasanti1910"><author><name type="surname">Colasanti</name> Arduino </author><date>1910</date>, <title level="a"
+                            >Lorenzo e Jacopo Salimbeni da Sanseverino</title>, <title level="j">Bollettino d’Arte</title>
+                        <biblScope unit="issue">IX</biblScope>, <biblScope unit="pp"
+                            >409-457</biblScope></bibl>
+                    
 <!--           esempio monografia
 
          <bibl xml:id="applebaum1979"><author><name type="surname">Applebaum</name>,
@@ -50,7 +53,13 @@
                             Ancient Cyrene</title>, <title level="s">Studies in Judaism in late
                             antiquity</title>
                         <biblScope unit="vol">28</biblScope>, <pubPlace>Leiden</pubPlace></bibl>
--->
+                        
+--> 
+                    <bibl xml:id="serra1934"><author><name type="surname">Serra</name>,
+                            Luigi </author>, <date>1934</date>, <title level="m">Urbino </title> <title level="s">Catalogo delle cose d’arte e di antichità d’Italia</title>
+                        <biblScope unit="vol">V</biblScope><pubPlace>Roma</pubPlace></bibl>
+                    
+                     
           
 
                 </listBibl>
